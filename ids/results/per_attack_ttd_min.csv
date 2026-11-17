@@ -1,0 +1,10 @@
+model,botnet,bruteforce,exfil,http_ddos,mqtt_flood,scan
+Reglas z-score por perfil,0.0,0.0,0.0,0.0,0.0,0.0
+Isolation Forest,463.1956311811363,2.8329081470127373,,0.03302889526821673,0.28188753909004544,0.0
+"Isolation Forest (todos los rasgos, ablación)",465.8279386932074,1.8470282014983241,0.0,0.20725491401778223,0.8882398390521605,0.0036795835049512485
+Autoencoder ligero,0.0,0.0,0.0,0.0,0.0,0.0
+Árbol de decisión,0.0,4.006325347003682,,0.0,0.0,1.862899151040862
+Bosque ligero (10 árboles),0.0,4.001948763727948,,0.0,0.0,1.8798608972555182
+Híbrido (árbol + autoencoder),0.0,0.0,0.0,0.0,0.0,0.0
+Random Forest (300 árboles),0.0,4.006325347003682,,0.0,0.0,0.0
+MLP profunda (256-128-64),0.0,0.0,,0.0,0.0,0.0

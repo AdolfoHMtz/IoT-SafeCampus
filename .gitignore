@@ -1,0 +1,28 @@
+# Lista blanca: solo se publica lo que se permite explícitamente.
+/*
+!/.gitignore
+!/README.md
+!/reporte/
+!/img/
+!/infra/
+!/ids/
+
+# Packet Tracer: solo las versiones finales
+/infra/*_respaldo.pkt
+
+# IDS: sin entorno virtual, cachés, modelos entrenados ni logs
+/ids/.venv/
+/ids/.pytest_cache/
+/ids/models/
+/ids/results/*.log
+/ids/results/_5aulas/
+/ids/results/edge_5aulas/
+
+# Datos: el dataset externo (5 GB) y el subconjunto .pkl (434 MB) no caben en GitHub
+/ids/data/*
+!/ids/data/flows.csv.gz
+!/ids/data/nf3_subset.json
+!/ids/data/NetFlow_v3_Features.csv
+
+__pycache__/
+*.pyc

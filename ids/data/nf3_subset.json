@@ -1,0 +1,22 @@
+{
+  "cal_from": "2019-04-26 01:40:00",
+  "test_from": "2019-04-26 13:40:00",
+  "seen": [
+    "scanning",
+    "dos",
+    "injection",
+    "ddos"
+  ],
+  "unseen": [
+    "password",
+    "xss",
+    "ransomware",
+    "backdoor",
+    "mitm"
+  ],
+  "flows_per_split": {
+    "fit": 2249025,
+    "test": 2218951,
+    "cal": 497760
+  }
+}

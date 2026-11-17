@@ -1,0 +1,42 @@
+! CAM-A4 (10.10.20.14) -> cuarentena
+SW-AULA4# configure terminal
+SW-AULA4(config)# interface FastEthernet0/3
+SW-AULA4(config-if)# switchport access vlan 99
+SW-AULA4(config-if)# end
+! Reasignar en el host: IP 10.10.99.100/24, gateway 10.10.99.1 (ACL 199 solo permite hacia gestión/IDS)
+
+! PC-ATACANTE (10.10.40.66) -> cuarentena
+SW-LAB# configure terminal
+SW-LAB(config)# interface FastEthernet0/4
+SW-LAB(config-if)# switchport access vlan 99
+SW-LAB(config-if)# end
+! Reasignar en el host: IP 10.10.99.101/24, gateway 10.10.99.1 (ACL 199 solo permite hacia gestión/IDS)
+
+! SENS-A5 (10.10.10.15) -> cuarentena
+SW-AULA5# configure terminal
+SW-AULA5(config)# interface FastEthernet0/2
+SW-AULA5(config-if)# switchport access vlan 99
+SW-AULA5(config-if)# end
+! Reasignar en el host: IP 10.10.99.102/24, gateway 10.10.99.1 (ACL 199 solo permite hacia gestión/IDS)
+
+! CAM-A2 (10.10.20.12) -> cuarentena
+SW-AULA2# configure terminal
+SW-AULA2(config)# interface FastEthernet0/3
+SW-AULA2(config-if)# switchport access vlan 99
+SW-AULA2(config-if)# end
+! Reasignar en el host: IP 10.10.99.103/24, gateway 10.10.99.1 (ACL 199 solo permite hacia gestión/IDS)
+
+! PROTO-LAB2 (10.10.40.12) -> cuarentena
+SW-LAB# configure terminal
+SW-LAB(config)# interface FastEthernet0/2
+SW-LAB(config-if)# switchport access vlan 99
+SW-LAB(config-if)# end
+! Reasignar en el host: IP 10.10.99.104/24, gateway 10.10.99.1 (ACL 199 solo permite hacia gestión/IDS)
+
+! LAPTOP-EST (10.10.40.21) -> cuarentena
+SW-LAB# configure terminal
+SW-LAB(config)# interface FastEthernet0/3
+SW-LAB(config-if)# switchport access vlan 99
+SW-LAB(config-if)# end
+! Reasignar en el host: IP 10.10.99.105/24, gateway 10.10.99.1 (ACL 199 solo permite hacia gestión/IDS)
+

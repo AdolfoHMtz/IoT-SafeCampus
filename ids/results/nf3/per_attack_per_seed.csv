@@ -1,0 +1,226 @@
+seed,model,attack,recall,ttd_min,n
+0,Reglas z-score por perfil,backdoor,3.2920726889649725e-05,3.297400001684825,60752
+0,Reglas z-score por perfil,mitm,0.09080325960419092,0.0,6013
+0,Reglas z-score por perfil,password,0.0,,68402
+0,Reglas z-score por perfil,ransomware,0.04331402669352808,0.0,3971
+0,Reglas z-score por perfil,xss,0.0010027804366652992,0.25381666819254556,65817
+0,Isolation Forest,backdoor,0.0,0.25200000206629436,60752
+0,Isolation Forest,mitm,0.14252453018460004,0.0,6013
+0,Isolation Forest,password,1.4619455571474518e-05,3.523983335494995,68402
+0,Isolation Forest,ransomware,0.0,0.0030499974886576335,3971
+0,Isolation Forest,xss,0.0,,65817
+0,"Isolation Forest (todos los rasgos, ablación)",backdoor,0.0005267316302343956,0.1337166666984558,60752
+0,"Isolation Forest (todos los rasgos, ablación)",mitm,0.15682687510394147,0.0,6013
+0,"Isolation Forest (todos los rasgos, ablación)",password,0.10337417034589631,0.996316667397817,68402
+0,"Isolation Forest (todos los rasgos, ablación)",ransomware,0.05237975321077814,1.558483330408732,3971
+0,"Isolation Forest (todos los rasgos, ablación)",xss,0.3732014525122689,6.666978200276693e-05,65817
+0,Autoencoder ligero,backdoor,0.9357387411114038,0.0,60752
+0,Autoencoder ligero,mitm,0.06918343588890737,0.0,6013
+0,Autoencoder ligero,password,0.6208151808426654,0.0021500031153361,68402
+0,Autoencoder ligero,ransomware,0.030722739864014102,1.5592166662216187,3971
+0,Autoencoder ligero,xss,0.2327362231642281,0.0008333365122477214,65817
+0,Árbol de decisión,backdoor,0.35663023439557545,0.0,60752
+0,Árbol de decisión,mitm,0.1535007483785132,5.00306666692098,6013
+0,Árbol de decisión,password,0.9963158971959885,0.0,68402
+0,Árbol de decisión,ransomware,0.002014605892722236,27.218783330917358,3971
+0,Árbol de decisión,xss,0.743105884497926,0.0,65817
+0,Bosque ligero (10 árboles),backdoor,0.8811561759283645,0.0,60752
+0,Bosque ligero (10 árboles),mitm,0.570430733410943,1.3395833333333333,6013
+0,Bosque ligero (10 árboles),password,0.9999853805444285,0.0,68402
+0,Bosque ligero (10 árboles),ransomware,0.0,,3971
+0,Bosque ligero (10 árboles),xss,0.9939073491651094,0.0,65817
+0,Híbrido (árbol + autoencoder),backdoor,0.8597906241769818,0.0,60752
+0,Híbrido (árbol + autoencoder),mitm,0.23299517711624812,0.0,6013
+0,Híbrido (árbol + autoencoder),password,0.9999853805444285,0.0,68402
+0,Híbrido (árbol + autoencoder),ransomware,0.04255854948375724,1.5387499968210856,3971
+0,Híbrido (árbol + autoencoder),xss,0.7515079690657429,0.0,65817
+0,Random Forest (300 árboles),backdoor,0.04901896233868844,2.7639166673024493,60752
+0,Random Forest (300 árboles),mitm,0.011475137202727423,21.346050000190736,6013
+0,Random Forest (300 árboles),password,1.0,0.0,68402
+0,Random Forest (300 árboles),ransomware,0.0,,3971
+0,Random Forest (300 árboles),xss,0.8865946487989426,0.0,65817
+0,MLP profunda (256-128-64),backdoor,0.9916710560969186,1.8691166679064433,60752
+0,MLP profunda (256-128-64),mitm,0.2453018460003326,0.0,6013
+0,MLP profunda (256-128-64),password,0.9999122832665711,0.0,68402
+0,MLP profunda (256-128-64),ransomware,0.14605892722236213,20.233633331457774,3971
+0,MLP profunda (256-128-64),xss,0.7214093623228042,0.0,65817
+1,Reglas z-score por perfil,backdoor,3.2920726889649725e-05,3.297400001684825,60752
+1,Reglas z-score por perfil,mitm,0.09096956594046234,0.0,6013
+1,Reglas z-score por perfil,password,0.0,,68402
+1,Reglas z-score por perfil,ransomware,0.04331402669352808,0.0,3971
+1,Reglas z-score por perfil,xss,0.0010027804366652992,0.25381666819254556,65817
+1,Isolation Forest,backdoor,0.0,0.25200000206629436,60752
+1,Isolation Forest,mitm,0.1362048894062864,0.0,6013
+1,Isolation Forest,password,0.0,,68402
+1,Isolation Forest,ransomware,0.0,4.007383330663045,3971
+1,Isolation Forest,xss,0.0,,65817
+1,"Isolation Forest (todos los rasgos, ablación)",backdoor,0.7246181195680801,0.0,60752
+1,"Isolation Forest (todos los rasgos, ablación)",mitm,0.1726259770497256,0.0,6013
+1,"Isolation Forest (todos los rasgos, ablación)",password,0.9610976287243063,0.0,68402
+1,"Isolation Forest (todos los rasgos, ablación)",ransomware,0.5502392344497608,0.0509666641553243,3971
+1,"Isolation Forest (todos los rasgos, ablación)",xss,0.5410760137958278,6.666978200276693e-05,65817
+1,Autoencoder ligero,backdoor,3.2920726889649725e-05,23.121399998664856,60752
+1,Autoencoder ligero,mitm,0.05820721769499418,0.0,6013
+1,Autoencoder ligero,password,0.005058331627730183,0.053616666793823244,68402
+1,Autoencoder ligero,ransomware,0.0030219088390833542,1.8094833334287008,3971
+1,Autoencoder ligero,xss,0.002613306592521689,0.20385000308354695,65817
+1,Árbol de decisión,backdoor,0.5629115090861206,0.7275000015894572,60752
+1,Árbol de decisión,mitm,0.15383336105105605,0.0,6013
+1,Árbol de decisión,password,0.9999853805444285,0.0,68402
+1,Árbol de decisión,ransomware,0.018131453034500127,10.74079999923706,3971
+1,Árbol de decisión,xss,0.9815245301365908,0.0,65817
+1,Bosque ligero (10 árboles),backdoor,0.9582565183039241,0.0,60752
+1,Bosque ligero (10 árboles),mitm,0.048561450191252284,1.417133335272471,6013
+1,Bosque ligero (10 árboles),password,0.9998684248998567,0.0,68402
+1,Bosque ligero (10 árboles),ransomware,0.020146058927222363,21.399216663837432,3971
+1,Bosque ligero (10 árboles),xss,0.991947369220718,0.0,65817
+1,Híbrido (árbol + autoencoder),backdoor,0.997366341848828,0.0,60752
+1,Híbrido (árbol + autoencoder),mitm,0.1977382338267088,0.0,6013
+1,Híbrido (árbol + autoencoder),password,0.9999853805444285,0.0,68402
+1,Híbrido (árbol + autoencoder),ransomware,0.022916142029715435,1.558483330408732,3971
+1,Híbrido (árbol + autoencoder),xss,0.9815245301365908,0.0,65817
+1,Random Forest (300 árboles),backdoor,0.06093626547274164,2.7639166673024493,60752
+1,Random Forest (300 árboles),mitm,0.009812073840013305,27.34708333412806,6013
+1,Random Forest (300 árboles),password,0.9997660887108564,0.0,68402
+1,Random Forest (300 árboles),ransomware,0.0,,3971
+1,Random Forest (300 árboles),xss,0.7656076697509762,0.0,65817
+1,MLP profunda (256-128-64),backdoor,0.9824861732947063,0.08683333396911622,60752
+1,MLP profunda (256-128-64),mitm,0.1975719274904374,0.0,6013
+1,MLP profunda (256-128-64),password,0.9978947983977077,0.0,68402
+1,MLP profunda (256-128-64),ransomware,0.06572651725006295,11.132249999046326,3971
+1,MLP profunda (256-128-64),xss,0.6043879240925597,6.666978200276693e-05,65817
+2,Reglas z-score por perfil,backdoor,3.2920726889649725e-05,3.297400001684825,60752
+2,Reglas z-score por perfil,mitm,0.09113587227673374,0.0,6013
+2,Reglas z-score por perfil,password,0.0,,68402
+2,Reglas z-score por perfil,ransomware,0.04356585243011836,0.0,3971
+2,Reglas z-score por perfil,xss,0.0010179740796450766,0.25381666819254556,65817
+2,Isolation Forest,backdoor,0.0,0.25200000206629436,60752
+2,Isolation Forest,mitm,0.09496091801097621,0.0,6013
+2,Isolation Forest,password,8.771673342884711e-05,3.523983335494995,68402
+2,Isolation Forest,ransomware,0.0,1.558483330408732,3971
+2,Isolation Forest,xss,0.011364844948873392,0.999916668732961,65817
+2,"Isolation Forest (todos los rasgos, ablación)",backdoor,0.0004608901764550961,0.25200000206629436,60752
+2,"Isolation Forest (todos los rasgos, ablación)",mitm,0.1824380508897389,0.0,6013
+2,"Isolation Forest (todos los rasgos, ablación)",password,0.001154936990146487,0.996316667397817,68402
+2,"Isolation Forest (todos los rasgos, ablación)",ransomware,0.19743137748677914,1.558483330408732,3971
+2,"Isolation Forest (todos los rasgos, ablación)",xss,0.3669416716046006,6.666978200276693e-05,65817
+2,Autoencoder ligero,backdoor,0.004641822491440611,0.0,60752
+2,Autoencoder ligero,mitm,0.06286379511059371,0.0,6013
+2,Autoencoder ligero,password,0.007485161252594953,0.053616666793823244,68402
+2,Autoencoder ligero,ransomware,0.0002518257365902795,1.8094833334287008,3971
+2,Autoencoder ligero,xss,0.21540027652430224,6.666978200276693e-05,65817
+2,Árbol de decisión,backdoor,0.99153937318936,0.7275000015894572,60752
+2,Árbol de decisión,mitm,0.17345750873108265,0.0,6013
+2,Árbol de decisión,password,0.9947369959942691,0.0,68402
+2,Árbol de decisión,ransomware,0.0007554772097708386,21.23903333346049,3971
+2,Árbol de decisión,xss,1.0,0.0,65817
+2,Bosque ligero (10 árboles),backdoor,0.9419936792204372,0.25200000206629436,60752
+2,Bosque ligero (10 árboles),mitm,0.1909196740395809,0.011799999078114827,6013
+2,Bosque ligero (10 árboles),password,0.9996783719774276,0.0,68402
+2,Bosque ligero (10 árboles),ransomware,0.0,16.493416666984558,3971
+2,Bosque ligero (10 árboles),xss,1.0,0.0,65817
+2,Híbrido (árbol + autoencoder),backdoor,0.9918027390044772,0.7275000015894572,60752
+2,Híbrido (árbol + autoencoder),mitm,0.2271744553467487,0.0,6013
+2,Híbrido (árbol + autoencoder),password,0.9993421244992836,0.0,68402
+2,Híbrido (árbol + autoencoder),ransomware,0.001007302946361118,1.799483331044515,3971
+2,Híbrido (árbol + autoencoder),xss,1.0,0.0,65817
+2,Random Forest (300 árboles),backdoor,0.04931524888069529,2.7639166673024493,60752
+2,Random Forest (300 árboles),mitm,0.010976218193913189,21.346050000190736,6013
+2,Random Forest (300 árboles),password,0.9999561416332856,0.0,68402
+2,Random Forest (300 árboles),ransomware,0.0,,3971
+2,Random Forest (300 árboles),xss,0.8512542352279806,0.0,65817
+2,MLP profunda (256-128-64),backdoor,0.9968066894917039,0.0,60752
+2,MLP profunda (256-128-64),mitm,0.1589888574754698,0.0,6013
+2,MLP profunda (256-128-64),password,0.9997368497997134,0.0,68402
+2,MLP profunda (256-128-64),ransomware,0.0,23.835466667016348,3971
+2,MLP profunda (256-128-64),xss,0.5492046127900087,6.666978200276693e-05,65817
+3,Reglas z-score por perfil,backdoor,3.2920726889649725e-05,3.297400001684825,60752
+3,Reglas z-score por perfil,mitm,0.09096956594046234,0.0,6013
+3,Reglas z-score por perfil,password,0.0,,68402
+3,Reglas z-score por perfil,ransomware,0.04331402669352808,0.0,3971
+3,Reglas z-score por perfil,xss,0.0010027804366652992,0.25381666819254556,65817
+3,Isolation Forest,backdoor,0.0,0.25200000206629436,60752
+3,Isolation Forest,mitm,0.12755695992017296,0.0,6013
+3,Isolation Forest,password,0.0,,68402
+3,Isolation Forest,ransomware,0.0,4.074799998601278,3971
+3,Isolation Forest,xss,0.0,,65817
+3,"Isolation Forest (todos los rasgos, ablación)",backdoor,0.7114498288122202,0.0,60752
+3,"Isolation Forest (todos los rasgos, ablación)",mitm,0.10277731581573257,0.0,6013
+3,"Isolation Forest (todos los rasgos, ablación)",password,0.08603549603812755,0.996316667397817,68402
+3,"Isolation Forest (todos los rasgos, ablación)",ransomware,0.011583983883152859,0.0509666641553243,3971
+3,"Isolation Forest (todos los rasgos, ablación)",xss,0.3351717641338864,6.666978200276693e-05,65817
+3,Autoencoder ligero,backdoor,0.0358177508559389,2.7639166673024493,60752
+3,Autoencoder ligero,mitm,0.07234325627806419,0.0,6013
+3,Autoencoder ligero,password,0.0060816935177333995,0.053616666793823244,68402
+3,Autoencoder ligero,ransomware,0.005036514731805591,1.5592166662216187,3971
+3,Autoencoder ligero,xss,0.012732272817053344,0.017366667588551838,65817
+3,Árbol de decisión,backdoor,0.9932512509876218,2.7639166673024493,60752
+3,Árbol de decisión,mitm,0.15217029768834192,0.0,6013
+3,Árbol de decisión,password,0.9950440045612702,0.0,68402
+3,Árbol de decisión,ransomware,0.00528834046839587,14.515316665172577,3971
+3,Árbol de decisión,xss,0.9815245301365908,0.0,65817
+3,Bosque ligero (10 árboles),backdoor,0.07282064787990519,0.7819000005722045,60752
+3,Bosque ligero (10 árboles),mitm,0.4096125062364876,0.0,6013
+3,Bosque ligero (10 árboles),password,1.0,0.0,68402
+3,Bosque ligero (10 árboles),ransomware,0.0,25.35826666355133,3971
+3,Bosque ligero (10 árboles),xss,1.0,0.0,65817
+3,Híbrido (árbol + autoencoder),backdoor,0.9975309454832763,0.0,60752
+3,Híbrido (árbol + autoencoder),mitm,0.2521204057874605,0.0,6013
+3,Híbrido (árbol + autoencoder),password,0.9995467968772843,0.0,68402
+3,Híbrido (árbol + autoencoder),ransomware,0.03802568622513221,1.558483330408732,3971
+3,Híbrido (árbol + autoencoder),xss,0.9815245301365908,0.0,65817
+3,Random Forest (300 árboles),backdoor,0.047899657624440345,2.7639166673024493,60752
+3,Random Forest (300 árboles),mitm,0.014302344919341427,20.441516665617623,6013
+3,Random Forest (300 árboles),password,1.0,0.0,68402
+3,Random Forest (300 árboles),ransomware,0.0,,3971
+3,Random Forest (300 árboles),xss,0.993117279730161,0.0,65817
+3,MLP profunda (256-128-64),backdoor,0.9887411114037398,0.08683333396911622,60752
+3,MLP profunda (256-128-64),mitm,0.18426742058872442,0.12379999955495198,6013
+3,MLP profunda (256-128-64),password,0.9983187626092804,0.0,68402
+3,MLP profunda (256-128-64),ransomware,0.0,94.9900833328565,3971
+3,MLP profunda (256-128-64),xss,0.5633498944041813,6.666978200276693e-05,65817
+4,Reglas z-score por perfil,backdoor,3.2920726889649725e-05,3.297400001684825,60752
+4,Reglas z-score por perfil,mitm,0.09113587227673374,0.0,6013
+4,Reglas z-score por perfil,password,0.0,,68402
+4,Reglas z-score por perfil,ransomware,0.04356585243011836,0.0,3971
+4,Reglas z-score por perfil,xss,0.0010179740796450766,0.25381666819254556,65817
+4,Isolation Forest,backdoor,0.0,0.25200000206629436,60752
+4,Isolation Forest,mitm,0.1435223682022285,0.0,6013
+4,Isolation Forest,password,0.0,,68402
+4,Isolation Forest,ransomware,0.0,1.5553833325703939,3971
+4,Isolation Forest,xss,0.00015193642979777263,1.0863499999046327,65817
+4,"Isolation Forest (todos los rasgos, ablación)",backdoor,0.0016789570713721359,0.1337166666984558,60752
+4,"Isolation Forest (todos los rasgos, ablación)",mitm,0.1782803924829536,0.0,6013
+4,"Isolation Forest (todos los rasgos, ablación)",password,0.06131399666676413,0.11558333635330201,68402
+4,"Isolation Forest (todos los rasgos, ablación)",ransomware,0.009065726517250064,0.0509666641553243,3971
+4,"Isolation Forest (todos los rasgos, ablación)",xss,0.40861783429812965,6.666978200276693e-05,65817
+4,Autoencoder ligero,backdoor,0.5976757966815908,2.7639166673024493,60752
+4,Autoencoder ligero,mitm,0.06635622817229336,0.0,6013
+4,Autoencoder ligero,password,0.006403321540305839,0.053616666793823244,68402
+4,Autoencoder ligero,ransomware,0.03298917149332662,1.5592166662216187,3971
+4,Autoencoder ligero,xss,0.031314098181320936,0.0006000002225240072,65817
+4,Árbol de decisión,backdoor,0.9959178298656834,0.25200000206629436,60752
+4,Árbol de decisión,mitm,0.18077498752702478,0.30396666526794436,6013
+4,Árbol de decisión,password,0.9948685710944124,0.0,68402
+4,Árbol de decisión,ransomware,0.02140518761017376,10.74079999923706,3971
+4,Árbol de decisión,xss,1.0,0.0,65817
+4,Bosque ligero (10 árboles),backdoor,0.9924940742691598,0.0,60752
+4,Bosque ligero (10 árboles),mitm,0.6642275070680193,0.0,6013
+4,Bosque ligero (10 árboles),password,1.0,0.0,68402
+4,Bosque ligero (10 árboles),ransomware,0.0,21.23903333346049,3971
+4,Bosque ligero (10 árboles),xss,1.0,0.0,65817
+4,Híbrido (árbol + autoencoder),backdoor,0.9959178298656834,0.25200000206629436,60752
+4,Híbrido (árbol + autoencoder),mitm,0.21636454348910694,0.0,6013
+4,Híbrido (árbol + autoencoder),password,0.9993713634104266,0.0,68402
+4,Híbrido (árbol + autoencoder),ransomware,0.02190883908335432,1.8094833334287008,3971
+4,Híbrido (árbol + autoencoder),xss,1.0,0.0,65817
+4,Random Forest (300 árboles),backdoor,0.06995654464050566,2.7639166673024493,60752
+4,Random Forest (300 árboles),mitm,0.014136038583070014,1.6162999987602233,6013
+4,Random Forest (300 árboles),password,0.9997514692552849,0.0,68402
+4,Random Forest (300 árboles),ransomware,0.0,,3971
+4,Random Forest (300 árboles),xss,0.8831304981995534,0.0,65817
+4,MLP profunda (256-128-64),backdoor,0.9925599157229391,0.08683333396911622,60752
+4,MLP profunda (256-128-64),mitm,0.1919175120572094,0.11189999977747599,6013
+4,MLP profunda (256-128-64),password,0.995687260606415,0.0,68402
+4,MLP profunda (256-128-64),ransomware,0.0,21.399216663837432,3971
+4,MLP profunda (256-128-64),xss,0.5506632025160673,6.666978200276693e-05,65817

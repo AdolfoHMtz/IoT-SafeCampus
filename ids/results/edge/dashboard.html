@@ -1,0 +1,69 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>IoT-SafeCampus · Tablero</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#1f2328;--mut:#5b6470;--line:#e3e6ea;--acc:#2a7fbf;--bad:#c0392b;--warn:#b7791f}
+@media (prefers-color-scheme:dark){:root{--bg:#14171b;--card:#1d2127;--ink:#e8eaed;--mut:#9aa3ad;--line:#2c323a}}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,Segoe UI,sans-serif}
+main{max-width:1100px;margin:0 auto;padding:24px 16px}
+h1{margin:0 0 4px;font-size:24px} .mut{color:var(--mut)}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin:20px 0}
+.k{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px}
+.k b{display:block;font-size:26px} section{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px;margin:14px 0;overflow-x:auto}
+table{border-collapse:collapse;width:100%} td,th{border-bottom:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}
+.tag{border-radius:99px;padding:2px 10px;font-size:13px;white-space:nowrap} .q{background:#c0392b22;color:var(--bad)} .w{background:#b7791f22;color:var(--warn)}
+pre{background:#0f1318;color:#d7e3ee;border-radius:8px;padding:12px;overflow-x:auto;font-size:13px} ul{padding-left:18px}
+</style></head><body><main>
+<h1>IoT-SafeCampus · Tablero del gateway edge</h1>
+<div class="mut">Día simulado 3 · modelo: Reglas z-score por perfil · 120,655 flujos analizados</div>
+<div class="kpis">
+<div class="k"><b>89</b><span class="mut">alertas por host</span></div>
+<div class="k"><b>6</b><span class="mut">hosts en cuarentena</span></div>
+<div class="k"><b>0</b><span class="mut">aislamientos erróneos</span></div>
+<div class="k"><b>18 ms</b><span class="mut">p95 de proceso por minuto</span></div>
+<div class="k"><b>180 MB</b><span class="mut">memoria del proceso</span></div>
+</div>
+<section><h2>Hosts con alertas</h2><table><tr><th>Host</th><th>Estado</th><th>Alertas</th><th>Ventana</th><th>Diagnóstico</th></tr>
+<tr><td><b>CAM-A2</b><br><small>10.10.20.12</small></td><td><span class="tag q">En cuarentena desde 14:13</span></td><td>47</td><td>06:50 – 14:13</td><td>Escaneo telnet tipo Mirai (posible bot)<br>Posible canal de mando y control (C2)</td></tr><tr><td><b>SENS-A5</b><br><small>10.10.10.15</small></td><td><span class="tag q">En cuarentena desde 14:12</span></td><td>20</td><td>06:30 – 14:12</td><td>Escaneo telnet tipo Mirai (posible bot)<br>Posible canal de mando y control (C2)</td></tr><tr><td><b>CAM-A4</b><br><small>10.10.20.14</small></td><td><span class="tag q">En cuarentena desde 02:29</span></td><td>8</td><td>02:00 – 02:29</td><td>Posible exfiltración de datos (volumen nocturno)</td></tr><tr><td><b>PC-DOC1</b><br><small>10.10.30.11</small></td><td><span class="tag w">Vigilado</span></td><td>2</td><td>07:40 – 11:01</td><td>Comportamiento anómalo respecto a su perfil</td></tr><tr><td><b>PC-ATACANTE</b><br><small>10.10.40.66</small></td><td><span class="tag q">En cuarentena desde 09:19</span></td><td>2</td><td>09:18 – 09:19</td><td>Escaneo de red/puertos</td></tr><tr><td><b>PROTO-LAB2</b><br><small>10.10.40.12</small></td><td><span class="tag q">En cuarentena desde 16:37</span></td><td>2</td><td>16:36 – 16:37</td><td>Saturación HTTP del dashboard (DoS)</td></tr><tr><td><b>LAPTOP-EST</b><br><small>10.10.40.21</small></td><td><span class="tag q">En cuarentena desde 16:37</span></td><td>2</td><td>16:36 – 16:37</td><td>Saturación HTTP del dashboard (DoS)</td></tr><tr><td><b>PC-DOC9</b><br><small>10.10.30.19</small></td><td><span class="tag w">Vigilado</span></td><td>1</td><td>07:10 – 07:10</td><td>Comportamiento anómalo respecto a su perfil</td></tr><tr><td><b>PC-DOC5</b><br><small>10.10.30.15</small></td><td><span class="tag w">Vigilado</span></td><td>1</td><td>08:10 – 08:10</td><td>Saturación HTTP del dashboard (DoS)</td></tr><tr><td><b>PC-DOC4</b><br><small>10.10.30.14</small></td><td><span class="tag w">Vigilado</span></td><td>1</td><td>10:20 – 10:20</td><td>Comportamiento anómalo respecto a su perfil</td></tr><tr><td><b>PC-DOC10</b><br><small>10.10.30.20</small></td><td><span class="tag w">Vigilado</span></td><td>1</td><td>12:40 – 12:40</td><td>Saturación HTTP del dashboard (DoS)</td></tr><tr><td><b>PC-DOC3</b><br><small>10.10.30.13</small></td><td><span class="tag w">Vigilado</span></td><td>1</td><td>16:11 – 16:11</td><td>Comportamiento anómalo respecto a su perfil</td></tr><tr><td><b>PC-DOC2</b><br><small>10.10.30.12</small></td><td><span class="tag w">Vigilado</span></td><td>1</td><td>16:41 – 16:41</td><td>Comportamiento anómalo respecto a su perfil</td></tr></table></section>
+<section><h2>Últimas alertas</h2><ul><li><b>16:41</b> · PC-DOC2 · Comportamiento anómalo respecto a su perfil <small>(3/3 flujos, severidad media)</small></li><li><b>16:37</b> · LAPTOP-EST · Saturación HTTP del dashboard (DoS) <small>(172/172 flujos, severidad alta)</small></li><li><b>16:37</b> · PROTO-LAB2 · Saturación HTTP del dashboard (DoS) <small>(186/186 flujos, severidad alta)</small></li><li><b>16:36</b> · LAPTOP-EST · Saturación HTTP del dashboard (DoS) <small>(187/187 flujos, severidad alta)</small></li><li><b>16:36</b> · PROTO-LAB2 · Saturación HTTP del dashboard (DoS) <small>(177/177 flujos, severidad alta)</small></li><li><b>16:11</b> · PC-DOC3 · Comportamiento anómalo respecto a su perfil <small>(3/3 flujos, severidad media)</small></li><li><b>14:13</b> · CAM-A2 · Escaneo telnet tipo Mirai (posible bot) <small>(118/118 flujos, severidad alta)</small></li><li><b>14:12</b> · CAM-A2 · Escaneo telnet tipo Mirai (posible bot) <small>(117/117 flujos, severidad alta)</small></li><li><b>14:12</b> · SENS-A5 · Escaneo telnet tipo Mirai (posible bot) <small>(111/111 flujos, severidad alta)</small></li><li><b>14:11</b> · SENS-A5 · Posible canal de mando y control (C2) <small>(3/3 flujos, severidad media)</small></li><li><b>14:05</b> · SENS-A5 · Posible canal de mando y control (C2) <small>(3/3 flujos, severidad media)</small></li><li><b>13:58</b> · CAM-A2 · Posible canal de mando y control (C2) <small>(3/3 flujos, severidad media)</small></li><li><b>13:50</b> · CAM-A2 · Posible canal de mando y control (C2) <small>(3/3 flujos, severidad media)</small></li><li><b>13:50</b> · SENS-A5 · Posible canal de mando y control (C2) <small>(4/4 flujos, severidad media)</small></li><li><b>13:44</b> · CAM-A2 · Posible canal de mando y control (C2) <small>(4/4 flujos, severidad media)</small></li><li><b>13:30</b> · SENS-A5 · Posible canal de mando y control (C2) <small>(3/3 flujos, severidad media)</small></li><li><b>13:29</b> · CAM-A2 · Posible canal de mando y control (C2) <small>(3/3 flujos, severidad media)</small></li><li><b>13:22</b> · CAM-A2 · Posible canal de mando y control (C2) <small>(3/3 flujos, severidad media)</small></li><li><b>13:16</b> · CAM-A2 · Posible canal de mando y control (C2) <small>(3/3 flujos, severidad media)</small></li><li><b>13:15</b> · SENS-A5 · Posible canal de mando y control (C2) <small>(3/3 flujos, severidad media)</small></li><li><b>13:09</b> · SENS-A5 · Posible canal de mando y control (C2) <small>(3/3 flujos, severidad media)</small></li><li><b>13:08</b> · CAM-A2 · Posible canal de mando y control (C2) <small>(4/4 flujos, severidad media)</small></li><li><b>12:55</b> · SENS-A5 · Posible canal de mando y control (C2) <small>(3/3 flujos, severidad media)</small></li><li><b>12:47</b> · CAM-A2 · Posible canal de mando y control (C2) <small>(4/4 flujos, severidad media)</small></li><li><b>12:40</b> · PC-DOC10 · Saturación HTTP del dashboard (DoS) <small>(3/3 flujos, severidad media)</small></li></ul></section>
+<section><h2>Reglas de aislamiento propuestas</h2><pre>! CAM-A4 (10.10.20.14) -&gt; cuarentena
+SW-AULA4# configure terminal
+SW-AULA4(config)# interface FastEthernet0/3
+SW-AULA4(config-if)# switchport access vlan 99
+SW-AULA4(config-if)# end
+! Reasignar en el host: IP 10.10.99.100/24, gateway 10.10.99.1 (ACL 199 solo permite hacia gestión/IDS)
+
+! PC-ATACANTE (10.10.40.66) -&gt; cuarentena
+SW-LAB# configure terminal
+SW-LAB(config)# interface FastEthernet0/4
+SW-LAB(config-if)# switchport access vlan 99
+SW-LAB(config-if)# end
+! Reasignar en el host: IP 10.10.99.101/24, gateway 10.10.99.1 (ACL 199 solo permite hacia gestión/IDS)
+
+! SENS-A5 (10.10.10.15) -&gt; cuarentena
+SW-AULA5# configure terminal
+SW-AULA5(config)# interface FastEthernet0/2
+SW-AULA5(config-if)# switchport access vlan 99
+SW-AULA5(config-if)# end
+! Reasignar en el host: IP 10.10.99.102/24, gateway 10.10.99.1 (ACL 199 solo permite hacia gestión/IDS)
+
+! CAM-A2 (10.10.20.12) -&gt; cuarentena
+SW-AULA2# configure terminal
+SW-AULA2(config)# interface FastEthernet0/3
+SW-AULA2(config-if)# switchport access vlan 99
+SW-AULA2(config-if)# end
+! Reasignar en el host: IP 10.10.99.103/24, gateway 10.10.99.1 (ACL 199 solo permite hacia gestión/IDS)
+
+! PROTO-LAB2 (10.10.40.12) -&gt; cuarentena
+SW-LAB# configure terminal
+SW-LAB(config)# interface FastEthernet0/2
+SW-LAB(config-if)# switchport access vlan 99
+SW-LAB(config-if)# end
+! Reasignar en el host: IP 10.10.99.104/24, gateway 10.10.99.1 (ACL 199 solo permite hacia gestión/IDS)
+
+! LAPTOP-EST (10.10.40.21) -&gt; cuarentena
+SW-LAB# configure terminal
+SW-LAB(config)# interface FastEthernet0/3
+SW-LAB(config-if)# switchport access vlan 99
+SW-LAB(config-if)# end
+! Reasignar en el host: IP 10.10.99.105/24, gateway 10.10.99.1 (ACL 199 solo permite hacia gestión/IDS)</pre></section>
+</main></body></html>

@@ -1,0 +1,42 @@
+{
+  "modelo": "Reglas z-score por perfil",
+  "flujos": 120655,
+  "minutos": 1440,
+  "ms_por_minuto_p50": 15.381450008135289,
+  "ms_por_minuto_p95": 17.56084000808187,
+  "rss_mb": 179.55859375,
+  "rss_incremento_mb": 0.578125,
+  "alertas": 89,
+  "hosts_comprometidos": [
+    "CAM-A2",
+    "CAM-A4",
+    "LAPTOP-EST",
+    "PC-ATACANTE",
+    "PROTO-LAB2",
+    "SENS-A5"
+  ],
+  "hosts_alertados": [
+    "CAM-A2",
+    "CAM-A4",
+    "LAPTOP-EST",
+    "PC-ATACANTE",
+    "PC-DOC1",
+    "PC-DOC10",
+    "PC-DOC2",
+    "PC-DOC3",
+    "PC-DOC4",
+    "PC-DOC5",
+    "PC-DOC9",
+    "PROTO-LAB2",
+    "SENS-A5"
+  ],
+  "hosts_aislados": [
+    "CAM-A2",
+    "CAM-A4",
+    "LAPTOP-EST",
+    "PC-ATACANTE",
+    "PROTO-LAB2",
+    "SENS-A5"
+  ],
+  "falsos_aislamientos": []
+}

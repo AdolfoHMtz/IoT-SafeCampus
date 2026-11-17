@@ -1,0 +1,2485 @@
+{
+  "name": "IoT-SafeCampus",
+  "devices": [
+    {
+      "name": "R-ISP",
+      "model": "2911",
+      "category": "router",
+      "role": "edge_router",
+      "x": 796,
+      "y": 50,
+      "interfaces": {
+        "GigabitEthernet0/0": "200.0.0.2/30",
+        "GigabitEthernet0/1": "203.0.113.1/24"
+      },
+      "gateway": "",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 0,
+      "wireless": false
+    },
+    {
+      "name": "SRV-INTERNET",
+      "model": "Server-PT",
+      "category": "server",
+      "role": "server_host",
+      "x": 563,
+      "y": 34,
+      "interfaces": {
+        "FastEthernet0": "203.0.113.10/24"
+      },
+      "gateway": "203.0.113.1",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 0,
+      "wireless": false
+    },
+    {
+      "name": "R-EDGE",
+      "model": "ISR4331",
+      "category": "router",
+      "role": "core_router",
+      "x": 790,
+      "y": 160,
+      "interfaces": {
+        "GigabitEthernet0/0/1": "200.0.0.1/30",
+        "GigabitEthernet0/0/0.10": "10.10.10.1/24",
+        "GigabitEthernet0/0/0.20": "10.10.20.1/24",
+        "GigabitEthernet0/0/0.30": "10.10.30.1/24",
+        "GigabitEthernet0/0/0.40": "10.10.40.1/24",
+        "GigabitEthernet0/0/0.50": "10.10.50.1/24",
+        "GigabitEthernet0/0/0.60": "10.10.60.1/24",
+        "GigabitEthernet0/0/0.99": "10.10.99.1/24"
+      },
+      "gateway": "",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 0,
+      "wireless": false
+    },
+    {
+      "name": "SW-CORE",
+      "model": "2960-24TT",
+      "category": "switch",
+      "role": "distribution_switch",
+      "x": 790,
+      "y": 270,
+      "interfaces": {},
+      "gateway": "",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 0,
+      "wireless": false
+    },
+    {
+      "name": "SW-AULA1",
+      "model": "2960-24TT",
+      "category": "switch",
+      "role": "access_switch",
+      "x": 150,
+      "y": 400,
+      "interfaces": {},
+      "gateway": "",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 0,
+      "wireless": false
+    },
+    {
+      "name": "PC-DOC1",
+      "model": "PC-PT",
+      "category": "pc",
+      "role": "end_host",
+      "x": 40,
+      "y": 510,
+      "interfaces": {
+        "FastEthernet0": "10.10.30.11/24"
+      },
+      "gateway": "10.10.30.1",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 30,
+      "wireless": false
+    },
+    {
+      "name": "SENS-A1",
+      "model": "WiredEndDevice-PT",
+      "category": "wired_end_device",
+      "role": "end_host",
+      "x": 95,
+      "y": 600,
+      "interfaces": {
+        "FastEthernet0": "10.10.10.11/24"
+      },
+      "gateway": "10.10.10.1",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 10,
+      "wireless": false
+    },
+    {
+      "name": "CAM-A1",
+      "model": "WiredEndDevice-PT",
+      "category": "wired_end_device",
+      "role": "end_host",
+      "x": 150,
+      "y": 510,
+      "interfaces": {
+        "FastEthernet0": "10.10.20.11/24"
+      },
+      "gateway": "10.10.20.1",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 20,
+      "wireless": false
+    },
+    {
+      "name": "MOV-A1",
+      "model": "WiredEndDevice-PT",
+      "category": "wired_end_device",
+      "role": "end_host",
+      "x": 205,
+      "y": 600,
+      "interfaces": {
+        "FastEthernet0": "10.10.10.31/24"
+      },
+      "gateway": "10.10.10.1",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 10,
+      "wireless": false
+    },
+    {
+      "name": "PUERTA-A1",
+      "model": "WiredEndDevice-PT",
+      "category": "wired_end_device",
+      "role": "end_host",
+      "x": 260,
+      "y": 510,
+      "interfaces": {
+        "FastEthernet0": "10.10.10.51/24"
+      },
+      "gateway": "10.10.10.1",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 10,
+      "wireless": false
+    },
+    {
+      "name": "SW-AULA2",
+      "model": "2960-24TT",
+      "category": "switch",
+      "role": "access_switch",
+      "x": 470,
+      "y": 400,
+      "interfaces": {},
+      "gateway": "",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 0,
+      "wireless": false
+    },
+    {
+      "name": "PC-DOC2",
+      "model": "PC-PT",
+      "category": "pc",
+      "role": "end_host",
+      "x": 360,
+      "y": 510,
+      "interfaces": {
+        "FastEthernet0": "10.10.30.12/24"
+      },
+      "gateway": "10.10.30.1",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 30,
+      "wireless": false
+    },
+    {
+      "name": "SENS-A2",
+      "model": "WiredEndDevice-PT",
+      "category": "wired_end_device",
+      "role": "end_host",
+      "x": 415,
+      "y": 600,
+      "interfaces": {
+        "FastEthernet0": "10.10.10.12/24"
+      },
+      "gateway": "10.10.10.1",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 10,
+      "wireless": false
+    },
+    {
+      "name": "CAM-A2",
+      "model": "WiredEndDevice-PT",
+      "category": "wired_end_device",
+      "role": "end_host",
+      "x": 470,
+      "y": 510,
+      "interfaces": {
+        "FastEthernet0": "10.10.20.12/24"
+      },
+      "gateway": "10.10.20.1",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 20,
+      "wireless": false
+    },
+    {
+      "name": "MOV-A2",
+      "model": "WiredEndDevice-PT",
+      "category": "wired_end_device",
+      "role": "end_host",
+      "x": 525,
+      "y": 600,
+      "interfaces": {
+        "FastEthernet0": "10.10.10.32/24"
+      },
+      "gateway": "10.10.10.1",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 10,
+      "wireless": false
+    },
+    {
+      "name": "PUERTA-A2",
+      "model": "WiredEndDevice-PT",
+      "category": "wired_end_device",
+      "role": "end_host",
+      "x": 580,
+      "y": 510,
+      "interfaces": {
+        "FastEthernet0": "10.10.10.52/24"
+      },
+      "gateway": "10.10.10.1",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 10,
+      "wireless": false
+    },
+    {
+      "name": "SW-AULA3",
+      "model": "2960-24TT",
+      "category": "switch",
+      "role": "access_switch",
+      "x": 790,
+      "y": 400,
+      "interfaces": {},
+      "gateway": "",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 0,
+      "wireless": false
+    },
+    {
+      "name": "PC-DOC3",
+      "model": "PC-PT",
+      "category": "pc",
+      "role": "end_host",
+      "x": 680,
+      "y": 510,
+      "interfaces": {
+        "FastEthernet0": "10.10.30.13/24"
+      },
+      "gateway": "10.10.30.1",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 30,
+      "wireless": false
+    },
+    {
+      "name": "SENS-A3",
+      "model": "WiredEndDevice-PT",
+      "category": "wired_end_device",
+      "role": "end_host",
+      "x": 735,
+      "y": 600,
+      "interfaces": {
+        "FastEthernet0": "10.10.10.13/24"
+      },
+      "gateway": "10.10.10.1",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 10,
+      "wireless": false
+    },
+    {
+      "name": "CAM-A3",
+      "model": "WiredEndDevice-PT",
+      "category": "wired_end_device",
+      "role": "end_host",
+      "x": 790,
+      "y": 510,
+      "interfaces": {
+        "FastEthernet0": "10.10.20.13/24"
+      },
+      "gateway": "10.10.20.1",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 20,
+      "wireless": false
+    },
+    {
+      "name": "MOV-A3",
+      "model": "WiredEndDevice-PT",
+      "category": "wired_end_device",
+      "role": "end_host",
+      "x": 845,
+      "y": 600,
+      "interfaces": {
+        "FastEthernet0": "10.10.10.33/24"
+      },
+      "gateway": "10.10.10.1",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 10,
+      "wireless": false
+    },
+    {
+      "name": "PUERTA-A3",
+      "model": "WiredEndDevice-PT",
+      "category": "wired_end_device",
+      "role": "end_host",
+      "x": 900,
+      "y": 510,
+      "interfaces": {
+        "FastEthernet0": "10.10.10.53/24"
+      },
+      "gateway": "10.10.10.1",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 10,
+      "wireless": false
+    },
+    {
+      "name": "SW-AULA4",
+      "model": "2960-24TT",
+      "category": "switch",
+      "role": "access_switch",
+      "x": 1110,
+      "y": 400,
+      "interfaces": {},
+      "gateway": "",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 0,
+      "wireless": false
+    },
+    {
+      "name": "PC-DOC4",
+      "model": "PC-PT",
+      "category": "pc",
+      "role": "end_host",
+      "x": 1000,
+      "y": 510,
+      "interfaces": {
+        "FastEthernet0": "10.10.30.14/24"
+      },
+      "gateway": "10.10.30.1",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 30,
+      "wireless": false
+    },
+    {
+      "name": "SENS-A4",
+      "model": "WiredEndDevice-PT",
+      "category": "wired_end_device",
+      "role": "end_host",
+      "x": 1055,
+      "y": 600,
+      "interfaces": {
+        "FastEthernet0": "10.10.10.14/24"
+      },
+      "gateway": "10.10.10.1",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 10,
+      "wireless": false
+    },
+    {
+      "name": "CAM-A4",
+      "model": "WiredEndDevice-PT",
+      "category": "wired_end_device",
+      "role": "end_host",
+      "x": 1110,
+      "y": 510,
+      "interfaces": {
+        "FastEthernet0": "10.10.20.14/24"
+      },
+      "gateway": "10.10.20.1",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 20,
+      "wireless": false
+    },
+    {
+      "name": "MOV-A4",
+      "model": "WiredEndDevice-PT",
+      "category": "wired_end_device",
+      "role": "end_host",
+      "x": 1165,
+      "y": 600,
+      "interfaces": {
+        "FastEthernet0": "10.10.10.34/24"
+      },
+      "gateway": "10.10.10.1",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 10,
+      "wireless": false
+    },
+    {
+      "name": "PUERTA-A4",
+      "model": "WiredEndDevice-PT",
+      "category": "wired_end_device",
+      "role": "end_host",
+      "x": 1220,
+      "y": 510,
+      "interfaces": {
+        "FastEthernet0": "10.10.10.54/24"
+      },
+      "gateway": "10.10.10.1",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 10,
+      "wireless": false
+    },
+    {
+      "name": "SW-AULA5",
+      "model": "2960-24TT",
+      "category": "switch",
+      "role": "access_switch",
+      "x": 1430,
+      "y": 400,
+      "interfaces": {},
+      "gateway": "",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 0,
+      "wireless": false
+    },
+    {
+      "name": "PC-DOC5",
+      "model": "PC-PT",
+      "category": "pc",
+      "role": "end_host",
+      "x": 1320,
+      "y": 510,
+      "interfaces": {
+        "FastEthernet0": "10.10.30.15/24"
+      },
+      "gateway": "10.10.30.1",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 30,
+      "wireless": false
+    },
+    {
+      "name": "SENS-A5",
+      "model": "WiredEndDevice-PT",
+      "category": "wired_end_device",
+      "role": "end_host",
+      "x": 1375,
+      "y": 600,
+      "interfaces": {
+        "FastEthernet0": "10.10.10.15/24"
+      },
+      "gateway": "10.10.10.1",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 10,
+      "wireless": false
+    },
+    {
+      "name": "CAM-A5",
+      "model": "WiredEndDevice-PT",
+      "category": "wired_end_device",
+      "role": "end_host",
+      "x": 1430,
+      "y": 510,
+      "interfaces": {
+        "FastEthernet0": "10.10.20.15/24"
+      },
+      "gateway": "10.10.20.1",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 20,
+      "wireless": false
+    },
+    {
+      "name": "MOV-A5",
+      "model": "WiredEndDevice-PT",
+      "category": "wired_end_device",
+      "role": "end_host",
+      "x": 1485,
+      "y": 600,
+      "interfaces": {
+        "FastEthernet0": "10.10.10.35/24"
+      },
+      "gateway": "10.10.10.1",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 10,
+      "wireless": false
+    },
+    {
+      "name": "PUERTA-A5",
+      "model": "WiredEndDevice-PT",
+      "category": "wired_end_device",
+      "role": "end_host",
+      "x": 1540,
+      "y": 510,
+      "interfaces": {
+        "FastEthernet0": "10.10.10.55/24"
+      },
+      "gateway": "10.10.10.1",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 10,
+      "wireless": false
+    },
+    {
+      "name": "SW-AULA6",
+      "model": "2960-24TT",
+      "category": "switch",
+      "role": "access_switch",
+      "x": 310,
+      "y": 730,
+      "interfaces": {},
+      "gateway": "",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 0,
+      "wireless": false
+    },
+    {
+      "name": "PC-DOC6",
+      "model": "PC-PT",
+      "category": "pc",
+      "role": "end_host",
+      "x": 200,
+      "y": 840,
+      "interfaces": {
+        "FastEthernet0": "10.10.30.16/24"
+      },
+      "gateway": "10.10.30.1",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 30,
+      "wireless": false
+    },
+    {
+      "name": "SENS-A6",
+      "model": "WiredEndDevice-PT",
+      "category": "wired_end_device",
+      "role": "end_host",
+      "x": 255,
+      "y": 930,
+      "interfaces": {
+        "FastEthernet0": "10.10.10.16/24"
+      },
+      "gateway": "10.10.10.1",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 10,
+      "wireless": false
+    },
+    {
+      "name": "CAM-A6",
+      "model": "WiredEndDevice-PT",
+      "category": "wired_end_device",
+      "role": "end_host",
+      "x": 310,
+      "y": 840,
+      "interfaces": {
+        "FastEthernet0": "10.10.20.16/24"
+      },
+      "gateway": "10.10.20.1",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 20,
+      "wireless": false
+    },
+    {
+      "name": "MOV-A6",
+      "model": "WiredEndDevice-PT",
+      "category": "wired_end_device",
+      "role": "end_host",
+      "x": 365,
+      "y": 930,
+      "interfaces": {
+        "FastEthernet0": "10.10.10.36/24"
+      },
+      "gateway": "10.10.10.1",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 10,
+      "wireless": false
+    },
+    {
+      "name": "PUERTA-A6",
+      "model": "WiredEndDevice-PT",
+      "category": "wired_end_device",
+      "role": "end_host",
+      "x": 420,
+      "y": 840,
+      "interfaces": {
+        "FastEthernet0": "10.10.10.56/24"
+      },
+      "gateway": "10.10.10.1",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 10,
+      "wireless": false
+    },
+    {
+      "name": "SW-AULA7",
+      "model": "2960-24TT",
+      "category": "switch",
+      "role": "access_switch",
+      "x": 630,
+      "y": 730,
+      "interfaces": {},
+      "gateway": "",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 0,
+      "wireless": false
+    },
+    {
+      "name": "PC-DOC7",
+      "model": "PC-PT",
+      "category": "pc",
+      "role": "end_host",
+      "x": 520,
+      "y": 840,
+      "interfaces": {
+        "FastEthernet0": "10.10.30.17/24"
+      },
+      "gateway": "10.10.30.1",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 30,
+      "wireless": false
+    },
+    {
+      "name": "SENS-A7",
+      "model": "WiredEndDevice-PT",
+      "category": "wired_end_device",
+      "role": "end_host",
+      "x": 575,
+      "y": 930,
+      "interfaces": {
+        "FastEthernet0": "10.10.10.17/24"
+      },
+      "gateway": "10.10.10.1",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 10,
+      "wireless": false
+    },
+    {
+      "name": "CAM-A7",
+      "model": "WiredEndDevice-PT",
+      "category": "wired_end_device",
+      "role": "end_host",
+      "x": 630,
+      "y": 840,
+      "interfaces": {
+        "FastEthernet0": "10.10.20.17/24"
+      },
+      "gateway": "10.10.20.1",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 20,
+      "wireless": false
+    },
+    {
+      "name": "MOV-A7",
+      "model": "WiredEndDevice-PT",
+      "category": "wired_end_device",
+      "role": "end_host",
+      "x": 685,
+      "y": 930,
+      "interfaces": {
+        "FastEthernet0": "10.10.10.37/24"
+      },
+      "gateway": "10.10.10.1",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 10,
+      "wireless": false
+    },
+    {
+      "name": "PUERTA-A7",
+      "model": "WiredEndDevice-PT",
+      "category": "wired_end_device",
+      "role": "end_host",
+      "x": 740,
+      "y": 840,
+      "interfaces": {
+        "FastEthernet0": "10.10.10.57/24"
+      },
+      "gateway": "10.10.10.1",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 10,
+      "wireless": false
+    },
+    {
+      "name": "SW-AULA8",
+      "model": "2960-24TT",
+      "category": "switch",
+      "role": "access_switch",
+      "x": 950,
+      "y": 730,
+      "interfaces": {},
+      "gateway": "",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 0,
+      "wireless": false
+    },
+    {
+      "name": "PC-DOC8",
+      "model": "PC-PT",
+      "category": "pc",
+      "role": "end_host",
+      "x": 840,
+      "y": 840,
+      "interfaces": {
+        "FastEthernet0": "10.10.30.18/24"
+      },
+      "gateway": "10.10.30.1",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 30,
+      "wireless": false
+    },
+    {
+      "name": "SENS-A8",
+      "model": "WiredEndDevice-PT",
+      "category": "wired_end_device",
+      "role": "end_host",
+      "x": 895,
+      "y": 930,
+      "interfaces": {
+        "FastEthernet0": "10.10.10.18/24"
+      },
+      "gateway": "10.10.10.1",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 10,
+      "wireless": false
+    },
+    {
+      "name": "CAM-A8",
+      "model": "WiredEndDevice-PT",
+      "category": "wired_end_device",
+      "role": "end_host",
+      "x": 950,
+      "y": 840,
+      "interfaces": {
+        "FastEthernet0": "10.10.20.18/24"
+      },
+      "gateway": "10.10.20.1",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 20,
+      "wireless": false
+    },
+    {
+      "name": "MOV-A8",
+      "model": "WiredEndDevice-PT",
+      "category": "wired_end_device",
+      "role": "end_host",
+      "x": 1005,
+      "y": 930,
+      "interfaces": {
+        "FastEthernet0": "10.10.10.38/24"
+      },
+      "gateway": "10.10.10.1",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 10,
+      "wireless": false
+    },
+    {
+      "name": "PUERTA-A8",
+      "model": "WiredEndDevice-PT",
+      "category": "wired_end_device",
+      "role": "end_host",
+      "x": 1060,
+      "y": 840,
+      "interfaces": {
+        "FastEthernet0": "10.10.10.58/24"
+      },
+      "gateway": "10.10.10.1",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 10,
+      "wireless": false
+    },
+    {
+      "name": "SW-AULA9",
+      "model": "2960-24TT",
+      "category": "switch",
+      "role": "access_switch",
+      "x": 1270,
+      "y": 730,
+      "interfaces": {},
+      "gateway": "",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 0,
+      "wireless": false
+    },
+    {
+      "name": "PC-DOC9",
+      "model": "PC-PT",
+      "category": "pc",
+      "role": "end_host",
+      "x": 1160,
+      "y": 840,
+      "interfaces": {
+        "FastEthernet0": "10.10.30.19/24"
+      },
+      "gateway": "10.10.30.1",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 30,
+      "wireless": false
+    },
+    {
+      "name": "SENS-A9",
+      "model": "WiredEndDevice-PT",
+      "category": "wired_end_device",
+      "role": "end_host",
+      "x": 1215,
+      "y": 930,
+      "interfaces": {
+        "FastEthernet0": "10.10.10.19/24"
+      },
+      "gateway": "10.10.10.1",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 10,
+      "wireless": false
+    },
+    {
+      "name": "CAM-A9",
+      "model": "WiredEndDevice-PT",
+      "category": "wired_end_device",
+      "role": "end_host",
+      "x": 1270,
+      "y": 840,
+      "interfaces": {
+        "FastEthernet0": "10.10.20.19/24"
+      },
+      "gateway": "10.10.20.1",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 20,
+      "wireless": false
+    },
+    {
+      "name": "MOV-A9",
+      "model": "WiredEndDevice-PT",
+      "category": "wired_end_device",
+      "role": "end_host",
+      "x": 1325,
+      "y": 930,
+      "interfaces": {
+        "FastEthernet0": "10.10.10.39/24"
+      },
+      "gateway": "10.10.10.1",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 10,
+      "wireless": false
+    },
+    {
+      "name": "PUERTA-A9",
+      "model": "WiredEndDevice-PT",
+      "category": "wired_end_device",
+      "role": "end_host",
+      "x": 1380,
+      "y": 840,
+      "interfaces": {
+        "FastEthernet0": "10.10.10.59/24"
+      },
+      "gateway": "10.10.10.1",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 10,
+      "wireless": false
+    },
+    {
+      "name": "SW-AULA10",
+      "model": "2960-24TT",
+      "category": "switch",
+      "role": "access_switch",
+      "x": 1590,
+      "y": 730,
+      "interfaces": {},
+      "gateway": "",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 0,
+      "wireless": false
+    },
+    {
+      "name": "PC-DOC10",
+      "model": "PC-PT",
+      "category": "pc",
+      "role": "end_host",
+      "x": 1480,
+      "y": 840,
+      "interfaces": {
+        "FastEthernet0": "10.10.30.20/24"
+      },
+      "gateway": "10.10.30.1",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 30,
+      "wireless": false
+    },
+    {
+      "name": "SENS-A10",
+      "model": "WiredEndDevice-PT",
+      "category": "wired_end_device",
+      "role": "end_host",
+      "x": 1535,
+      "y": 930,
+      "interfaces": {
+        "FastEthernet0": "10.10.10.20/24"
+      },
+      "gateway": "10.10.10.1",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 10,
+      "wireless": false
+    },
+    {
+      "name": "CAM-A10",
+      "model": "WiredEndDevice-PT",
+      "category": "wired_end_device",
+      "role": "end_host",
+      "x": 1590,
+      "y": 840,
+      "interfaces": {
+        "FastEthernet0": "10.10.20.20/24"
+      },
+      "gateway": "10.10.20.1",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 20,
+      "wireless": false
+    },
+    {
+      "name": "MOV-A10",
+      "model": "WiredEndDevice-PT",
+      "category": "wired_end_device",
+      "role": "end_host",
+      "x": 1645,
+      "y": 930,
+      "interfaces": {
+        "FastEthernet0": "10.10.10.40/24"
+      },
+      "gateway": "10.10.10.1",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 10,
+      "wireless": false
+    },
+    {
+      "name": "PUERTA-A10",
+      "model": "WiredEndDevice-PT",
+      "category": "wired_end_device",
+      "role": "end_host",
+      "x": 1700,
+      "y": 840,
+      "interfaces": {
+        "FastEthernet0": "10.10.10.60/24"
+      },
+      "gateway": "10.10.10.1",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 10,
+      "wireless": false
+    },
+    {
+      "name": "SW-LAB",
+      "model": "2960-24TT",
+      "category": "switch",
+      "role": "access_switch",
+      "x": 1790,
+      "y": 400,
+      "interfaces": {},
+      "gateway": "",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 0,
+      "wireless": false
+    },
+    {
+      "name": "PROTO-LAB1",
+      "model": "WiredEndDevice-PT",
+      "category": "wired_end_device",
+      "role": "end_host",
+      "x": 1695,
+      "y": 510,
+      "interfaces": {
+        "FastEthernet0": "10.10.40.11/24"
+      },
+      "gateway": "10.10.40.1",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 40,
+      "wireless": false
+    },
+    {
+      "name": "PROTO-LAB2",
+      "model": "WiredEndDevice-PT",
+      "category": "wired_end_device",
+      "role": "end_host",
+      "x": 1740,
+      "y": 600,
+      "interfaces": {
+        "FastEthernet0": "10.10.40.12/24"
+      },
+      "gateway": "10.10.40.1",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 40,
+      "wireless": false
+    },
+    {
+      "name": "LAPTOP-EST",
+      "model": "Laptop-PT",
+      "category": "laptop",
+      "role": "end_host",
+      "x": 1790,
+      "y": 510,
+      "interfaces": {
+        "FastEthernet0": "10.10.40.21/24"
+      },
+      "gateway": "10.10.40.1",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 40,
+      "wireless": false
+    },
+    {
+      "name": "PC-ATACANTE",
+      "model": "PC-PT",
+      "category": "pc",
+      "role": "end_host",
+      "x": 1885,
+      "y": 510,
+      "interfaces": {
+        "FastEthernet0": "10.10.40.66/24"
+      },
+      "gateway": "10.10.40.1",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 40,
+      "wireless": false
+    },
+    {
+      "name": "SW-DC",
+      "model": "2960-24TT",
+      "category": "switch",
+      "role": "access_switch",
+      "x": 1130,
+      "y": 270,
+      "interfaces": {},
+      "gateway": "",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 0,
+      "wireless": false
+    },
+    {
+      "name": "SRV-MQTT",
+      "model": "Server-PT",
+      "category": "server",
+      "role": "end_host",
+      "x": 1016,
+      "y": 150,
+      "interfaces": {
+        "FastEthernet0": "10.10.50.10/24"
+      },
+      "gateway": "10.10.50.1",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 50,
+      "wireless": false
+    },
+    {
+      "name": "SRV-DASHBOARD",
+      "model": "Server-PT",
+      "category": "server",
+      "role": "end_host",
+      "x": 1136,
+      "y": 150,
+      "interfaces": {
+        "FastEthernet0": "10.10.50.11/24"
+      },
+      "gateway": "10.10.50.1",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 50,
+      "wireless": false
+    },
+    {
+      "name": "IDS-EDGE",
+      "model": "Server-PT",
+      "category": "server",
+      "role": "end_host",
+      "x": 1256,
+      "y": 150,
+      "interfaces": {
+        "FastEthernet0": "10.10.60.10/24"
+      },
+      "gateway": "10.10.60.1",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 60,
+      "wireless": false
+    },
+    {
+      "name": "PC-ADMIN",
+      "model": "PC-PT",
+      "category": "pc",
+      "role": "end_host",
+      "x": 1376,
+      "y": 150,
+      "interfaces": {
+        "FastEthernet0": "10.10.60.20/24"
+      },
+      "gateway": "10.10.60.1",
+      "interfaces_v6": {},
+      "gateway_v6": "",
+      "vlan": 60,
+      "wireless": false
+    }
+  ],
+  "modules": [],
+  "links": [
+    {
+      "device_a": "R-ISP",
+      "port_a": "GigabitEthernet0/1",
+      "device_b": "SRV-INTERNET",
+      "port_b": "FastEthernet0",
+      "cable": "cross"
+    },
+    {
+      "device_a": "R-EDGE",
+      "port_a": "GigabitEthernet0/0/1",
+      "device_b": "R-ISP",
+      "port_b": "GigabitEthernet0/0",
+      "cable": "cross"
+    },
+    {
+      "device_a": "R-EDGE",
+      "port_a": "GigabitEthernet0/0/0",
+      "device_b": "SW-CORE",
+      "port_b": "GigabitEthernet0/1",
+      "cable": "straight"
+    },
+    {
+      "device_a": "SW-CORE",
+      "port_a": "FastEthernet0/1",
+      "device_b": "SW-AULA1",
+      "port_b": "GigabitEthernet0/1",
+      "cable": "cross"
+    },
+    {
+      "device_a": "SW-AULA1",
+      "port_a": "FastEthernet0/1",
+      "device_b": "PC-DOC1",
+      "port_b": "FastEthernet0",
+      "cable": "straight"
+    },
+    {
+      "device_a": "SW-AULA1",
+      "port_a": "FastEthernet0/2",
+      "device_b": "SENS-A1",
+      "port_b": "FastEthernet0",
+      "cable": "straight"
+    },
+    {
+      "device_a": "SW-AULA1",
+      "port_a": "FastEthernet0/3",
+      "device_b": "CAM-A1",
+      "port_b": "FastEthernet0",
+      "cable": "straight"
+    },
+    {
+      "device_a": "SW-AULA1",
+      "port_a": "FastEthernet0/4",
+      "device_b": "MOV-A1",
+      "port_b": "FastEthernet0",
+      "cable": "straight"
+    },
+    {
+      "device_a": "SW-AULA1",
+      "port_a": "FastEthernet0/5",
+      "device_b": "PUERTA-A1",
+      "port_b": "FastEthernet0",
+      "cable": "straight"
+    },
+    {
+      "device_a": "SW-CORE",
+      "port_a": "FastEthernet0/2",
+      "device_b": "SW-AULA2",
+      "port_b": "GigabitEthernet0/1",
+      "cable": "cross"
+    },
+    {
+      "device_a": "SW-AULA2",
+      "port_a": "FastEthernet0/1",
+      "device_b": "PC-DOC2",
+      "port_b": "FastEthernet0",
+      "cable": "straight"
+    },
+    {
+      "device_a": "SW-AULA2",
+      "port_a": "FastEthernet0/2",
+      "device_b": "SENS-A2",
+      "port_b": "FastEthernet0",
+      "cable": "straight"
+    },
+    {
+      "device_a": "SW-AULA2",
+      "port_a": "FastEthernet0/3",
+      "device_b": "CAM-A2",
+      "port_b": "FastEthernet0",
+      "cable": "straight"
+    },
+    {
+      "device_a": "SW-AULA2",
+      "port_a": "FastEthernet0/4",
+      "device_b": "MOV-A2",
+      "port_b": "FastEthernet0",
+      "cable": "straight"
+    },
+    {
+      "device_a": "SW-AULA2",
+      "port_a": "FastEthernet0/5",
+      "device_b": "PUERTA-A2",
+      "port_b": "FastEthernet0",
+      "cable": "straight"
+    },
+    {
+      "device_a": "SW-CORE",
+      "port_a": "FastEthernet0/3",
+      "device_b": "SW-AULA3",
+      "port_b": "GigabitEthernet0/1",
+      "cable": "cross"
+    },
+    {
+      "device_a": "SW-AULA3",
+      "port_a": "FastEthernet0/1",
+      "device_b": "PC-DOC3",
+      "port_b": "FastEthernet0",
+      "cable": "straight"
+    },
+    {
+      "device_a": "SW-AULA3",
+      "port_a": "FastEthernet0/2",
+      "device_b": "SENS-A3",
+      "port_b": "FastEthernet0",
+      "cable": "straight"
+    },
+    {
+      "device_a": "SW-AULA3",
+      "port_a": "FastEthernet0/3",
+      "device_b": "CAM-A3",
+      "port_b": "FastEthernet0",
+      "cable": "straight"
+    },
+    {
+      "device_a": "SW-AULA3",
+      "port_a": "FastEthernet0/4",
+      "device_b": "MOV-A3",
+      "port_b": "FastEthernet0",
+      "cable": "straight"
+    },
+    {
+      "device_a": "SW-AULA3",
+      "port_a": "FastEthernet0/5",
+      "device_b": "PUERTA-A3",
+      "port_b": "FastEthernet0",
+      "cable": "straight"
+    },
+    {
+      "device_a": "SW-CORE",
+      "port_a": "FastEthernet0/4",
+      "device_b": "SW-AULA4",
+      "port_b": "GigabitEthernet0/1",
+      "cable": "cross"
+    },
+    {
+      "device_a": "SW-AULA4",
+      "port_a": "FastEthernet0/1",
+      "device_b": "PC-DOC4",
+      "port_b": "FastEthernet0",
+      "cable": "straight"
+    },
+    {
+      "device_a": "SW-AULA4",
+      "port_a": "FastEthernet0/2",
+      "device_b": "SENS-A4",
+      "port_b": "FastEthernet0",
+      "cable": "straight"
+    },
+    {
+      "device_a": "SW-AULA4",
+      "port_a": "FastEthernet0/3",
+      "device_b": "CAM-A4",
+      "port_b": "FastEthernet0",
+      "cable": "straight"
+    },
+    {
+      "device_a": "SW-AULA4",
+      "port_a": "FastEthernet0/4",
+      "device_b": "MOV-A4",
+      "port_b": "FastEthernet0",
+      "cable": "straight"
+    },
+    {
+      "device_a": "SW-AULA4",
+      "port_a": "FastEthernet0/5",
+      "device_b": "PUERTA-A4",
+      "port_b": "FastEthernet0",
+      "cable": "straight"
+    },
+    {
+      "device_a": "SW-CORE",
+      "port_a": "FastEthernet0/5",
+      "device_b": "SW-AULA5",
+      "port_b": "GigabitEthernet0/1",
+      "cable": "cross"
+    },
+    {
+      "device_a": "SW-AULA5",
+      "port_a": "FastEthernet0/1",
+      "device_b": "PC-DOC5",
+      "port_b": "FastEthernet0",
+      "cable": "straight"
+    },
+    {
+      "device_a": "SW-AULA5",
+      "port_a": "FastEthernet0/2",
+      "device_b": "SENS-A5",
+      "port_b": "FastEthernet0",
+      "cable": "straight"
+    },
+    {
+      "device_a": "SW-AULA5",
+      "port_a": "FastEthernet0/3",
+      "device_b": "CAM-A5",
+      "port_b": "FastEthernet0",
+      "cable": "straight"
+    },
+    {
+      "device_a": "SW-AULA5",
+      "port_a": "FastEthernet0/4",
+      "device_b": "MOV-A5",
+      "port_b": "FastEthernet0",
+      "cable": "straight"
+    },
+    {
+      "device_a": "SW-AULA5",
+      "port_a": "FastEthernet0/5",
+      "device_b": "PUERTA-A5",
+      "port_b": "FastEthernet0",
+      "cable": "straight"
+    },
+    {
+      "device_a": "SW-CORE",
+      "port_a": "FastEthernet0/7",
+      "device_b": "SW-AULA6",
+      "port_b": "GigabitEthernet0/1",
+      "cable": "cross"
+    },
+    {
+      "device_a": "SW-AULA6",
+      "port_a": "FastEthernet0/1",
+      "device_b": "PC-DOC6",
+      "port_b": "FastEthernet0",
+      "cable": "straight"
+    },
+    {
+      "device_a": "SW-AULA6",
+      "port_a": "FastEthernet0/2",
+      "device_b": "SENS-A6",
+      "port_b": "FastEthernet0",
+      "cable": "straight"
+    },
+    {
+      "device_a": "SW-AULA6",
+      "port_a": "FastEthernet0/3",
+      "device_b": "CAM-A6",
+      "port_b": "FastEthernet0",
+      "cable": "straight"
+    },
+    {
+      "device_a": "SW-AULA6",
+      "port_a": "FastEthernet0/4",
+      "device_b": "MOV-A6",
+      "port_b": "FastEthernet0",
+      "cable": "straight"
+    },
+    {
+      "device_a": "SW-AULA6",
+      "port_a": "FastEthernet0/5",
+      "device_b": "PUERTA-A6",
+      "port_b": "FastEthernet0",
+      "cable": "straight"
+    },
+    {
+      "device_a": "SW-CORE",
+      "port_a": "FastEthernet0/8",
+      "device_b": "SW-AULA7",
+      "port_b": "GigabitEthernet0/1",
+      "cable": "cross"
+    },
+    {
+      "device_a": "SW-AULA7",
+      "port_a": "FastEthernet0/1",
+      "device_b": "PC-DOC7",
+      "port_b": "FastEthernet0",
+      "cable": "straight"
+    },
+    {
+      "device_a": "SW-AULA7",
+      "port_a": "FastEthernet0/2",
+      "device_b": "SENS-A7",
+      "port_b": "FastEthernet0",
+      "cable": "straight"
+    },
+    {
+      "device_a": "SW-AULA7",
+      "port_a": "FastEthernet0/3",
+      "device_b": "CAM-A7",
+      "port_b": "FastEthernet0",
+      "cable": "straight"
+    },
+    {
+      "device_a": "SW-AULA7",
+      "port_a": "FastEthernet0/4",
+      "device_b": "MOV-A7",
+      "port_b": "FastEthernet0",
+      "cable": "straight"
+    },
+    {
+      "device_a": "SW-AULA7",
+      "port_a": "FastEthernet0/5",
+      "device_b": "PUERTA-A7",
+      "port_b": "FastEthernet0",
+      "cable": "straight"
+    },
+    {
+      "device_a": "SW-CORE",
+      "port_a": "FastEthernet0/9",
+      "device_b": "SW-AULA8",
+      "port_b": "GigabitEthernet0/1",
+      "cable": "cross"
+    },
+    {
+      "device_a": "SW-AULA8",
+      "port_a": "FastEthernet0/1",
+      "device_b": "PC-DOC8",
+      "port_b": "FastEthernet0",
+      "cable": "straight"
+    },
+    {
+      "device_a": "SW-AULA8",
+      "port_a": "FastEthernet0/2",
+      "device_b": "SENS-A8",
+      "port_b": "FastEthernet0",
+      "cable": "straight"
+    },
+    {
+      "device_a": "SW-AULA8",
+      "port_a": "FastEthernet0/3",
+      "device_b": "CAM-A8",
+      "port_b": "FastEthernet0",
+      "cable": "straight"
+    },
+    {
+      "device_a": "SW-AULA8",
+      "port_a": "FastEthernet0/4",
+      "device_b": "MOV-A8",
+      "port_b": "FastEthernet0",
+      "cable": "straight"
+    },
+    {
+      "device_a": "SW-AULA8",
+      "port_a": "FastEthernet0/5",
+      "device_b": "PUERTA-A8",
+      "port_b": "FastEthernet0",
+      "cable": "straight"
+    },
+    {
+      "device_a": "SW-CORE",
+      "port_a": "FastEthernet0/10",
+      "device_b": "SW-AULA9",
+      "port_b": "GigabitEthernet0/1",
+      "cable": "cross"
+    },
+    {
+      "device_a": "SW-AULA9",
+      "port_a": "FastEthernet0/1",
+      "device_b": "PC-DOC9",
+      "port_b": "FastEthernet0",
+      "cable": "straight"
+    },
+    {
+      "device_a": "SW-AULA9",
+      "port_a": "FastEthernet0/2",
+      "device_b": "SENS-A9",
+      "port_b": "FastEthernet0",
+      "cable": "straight"
+    },
+    {
+      "device_a": "SW-AULA9",
+      "port_a": "FastEthernet0/3",
+      "device_b": "CAM-A9",
+      "port_b": "FastEthernet0",
+      "cable": "straight"
+    },
+    {
+      "device_a": "SW-AULA9",
+      "port_a": "FastEthernet0/4",
+      "device_b": "MOV-A9",
+      "port_b": "FastEthernet0",
+      "cable": "straight"
+    },
+    {
+      "device_a": "SW-AULA9",
+      "port_a": "FastEthernet0/5",
+      "device_b": "PUERTA-A9",
+      "port_b": "FastEthernet0",
+      "cable": "straight"
+    },
+    {
+      "device_a": "SW-CORE",
+      "port_a": "FastEthernet0/11",
+      "device_b": "SW-AULA10",
+      "port_b": "GigabitEthernet0/1",
+      "cable": "cross"
+    },
+    {
+      "device_a": "SW-AULA10",
+      "port_a": "FastEthernet0/1",
+      "device_b": "PC-DOC10",
+      "port_b": "FastEthernet0",
+      "cable": "straight"
+    },
+    {
+      "device_a": "SW-AULA10",
+      "port_a": "FastEthernet0/2",
+      "device_b": "SENS-A10",
+      "port_b": "FastEthernet0",
+      "cable": "straight"
+    },
+    {
+      "device_a": "SW-AULA10",
+      "port_a": "FastEthernet0/3",
+      "device_b": "CAM-A10",
+      "port_b": "FastEthernet0",
+      "cable": "straight"
+    },
+    {
+      "device_a": "SW-AULA10",
+      "port_a": "FastEthernet0/4",
+      "device_b": "MOV-A10",
+      "port_b": "FastEthernet0",
+      "cable": "straight"
+    },
+    {
+      "device_a": "SW-AULA10",
+      "port_a": "FastEthernet0/5",
+      "device_b": "PUERTA-A10",
+      "port_b": "FastEthernet0",
+      "cable": "straight"
+    },
+    {
+      "device_a": "SW-CORE",
+      "port_a": "FastEthernet0/6",
+      "device_b": "SW-LAB",
+      "port_b": "GigabitEthernet0/1",
+      "cable": "cross"
+    },
+    {
+      "device_a": "SW-LAB",
+      "port_a": "FastEthernet0/1",
+      "device_b": "PROTO-LAB1",
+      "port_b": "FastEthernet0",
+      "cable": "straight"
+    },
+    {
+      "device_a": "SW-LAB",
+      "port_a": "FastEthernet0/2",
+      "device_b": "PROTO-LAB2",
+      "port_b": "FastEthernet0",
+      "cable": "straight"
+    },
+    {
+      "device_a": "SW-LAB",
+      "port_a": "FastEthernet0/3",
+      "device_b": "LAPTOP-EST",
+      "port_b": "FastEthernet0",
+      "cable": "straight"
+    },
+    {
+      "device_a": "SW-LAB",
+      "port_a": "FastEthernet0/4",
+      "device_b": "PC-ATACANTE",
+      "port_b": "FastEthernet0",
+      "cable": "straight"
+    },
+    {
+      "device_a": "SW-CORE",
+      "port_a": "GigabitEthernet0/2",
+      "device_b": "SW-DC",
+      "port_b": "GigabitEthernet0/1",
+      "cable": "cross"
+    },
+    {
+      "device_a": "SW-DC",
+      "port_a": "FastEthernet0/1",
+      "device_b": "SRV-MQTT",
+      "port_b": "FastEthernet0",
+      "cable": "straight"
+    },
+    {
+      "device_a": "SW-DC",
+      "port_a": "FastEthernet0/2",
+      "device_b": "SRV-DASHBOARD",
+      "port_b": "FastEthernet0",
+      "cable": "straight"
+    },
+    {
+      "device_a": "SW-DC",
+      "port_a": "FastEthernet0/3",
+      "device_b": "IDS-EDGE",
+      "port_b": "FastEthernet0",
+      "cable": "straight"
+    },
+    {
+      "device_a": "SW-DC",
+      "port_a": "FastEthernet0/4",
+      "device_b": "PC-ADMIN",
+      "port_b": "FastEthernet0",
+      "cable": "straight"
+    }
+  ],
+  "dhcp_pools": [],
+  "static_routes": [
+    {
+      "router": "R-EDGE",
+      "destination": "0.0.0.0",
+      "mask": "0.0.0.0",
+      "next_hop": "200.0.0.2",
+      "admin_distance": 1
+    },
+    {
+      "router": "R-ISP",
+      "destination": "10.10.0.0",
+      "mask": "255.255.0.0",
+      "next_hop": "200.0.0.1",
+      "admin_distance": 1
+    }
+  ],
+  "ospf_configs": [],
+  "rip_configs": [],
+  "eigrp_configs": [],
+  "vlans": [
+    {
+      "vlan_id": 10,
+      "name": "IOT-SENSORES",
+      "subnet": "10.10.10.0/24"
+    },
+    {
+      "vlan_id": 20,
+      "name": "IOT-CAMARAS",
+      "subnet": "10.10.20.0/24"
+    },
+    {
+      "vlan_id": 30,
+      "name": "DOCENTES",
+      "subnet": "10.10.30.0/24"
+    },
+    {
+      "vlan_id": 40,
+      "name": "LAB-PROTOTIPOS",
+      "subnet": "10.10.40.0/24"
+    },
+    {
+      "vlan_id": 50,
+      "name": "SERVIDORES",
+      "subnet": "10.10.50.0/24"
+    },
+    {
+      "vlan_id": 60,
+      "name": "GESTION-IDS",
+      "subnet": "10.10.60.0/24"
+    },
+    {
+      "vlan_id": 99,
+      "name": "CUARENTENA",
+      "subnet": "10.10.99.0/24"
+    }
+  ],
+  "access_ports": [
+    {
+      "switch": "SW-AULA1",
+      "port": "FastEthernet0/1",
+      "vlan_id": 30
+    },
+    {
+      "switch": "SW-AULA1",
+      "port": "FastEthernet0/2",
+      "vlan_id": 10
+    },
+    {
+      "switch": "SW-AULA1",
+      "port": "FastEthernet0/3",
+      "vlan_id": 20
+    },
+    {
+      "switch": "SW-AULA1",
+      "port": "FastEthernet0/4",
+      "vlan_id": 10
+    },
+    {
+      "switch": "SW-AULA1",
+      "port": "FastEthernet0/5",
+      "vlan_id": 10
+    },
+    {
+      "switch": "SW-AULA2",
+      "port": "FastEthernet0/1",
+      "vlan_id": 30
+    },
+    {
+      "switch": "SW-AULA2",
+      "port": "FastEthernet0/2",
+      "vlan_id": 10
+    },
+    {
+      "switch": "SW-AULA2",
+      "port": "FastEthernet0/3",
+      "vlan_id": 20
+    },
+    {
+      "switch": "SW-AULA2",
+      "port": "FastEthernet0/4",
+      "vlan_id": 10
+    },
+    {
+      "switch": "SW-AULA2",
+      "port": "FastEthernet0/5",
+      "vlan_id": 10
+    },
+    {
+      "switch": "SW-AULA3",
+      "port": "FastEthernet0/1",
+      "vlan_id": 30
+    },
+    {
+      "switch": "SW-AULA3",
+      "port": "FastEthernet0/2",
+      "vlan_id": 10
+    },
+    {
+      "switch": "SW-AULA3",
+      "port": "FastEthernet0/3",
+      "vlan_id": 20
+    },
+    {
+      "switch": "SW-AULA3",
+      "port": "FastEthernet0/4",
+      "vlan_id": 10
+    },
+    {
+      "switch": "SW-AULA3",
+      "port": "FastEthernet0/5",
+      "vlan_id": 10
+    },
+    {
+      "switch": "SW-AULA4",
+      "port": "FastEthernet0/1",
+      "vlan_id": 30
+    },
+    {
+      "switch": "SW-AULA4",
+      "port": "FastEthernet0/2",
+      "vlan_id": 10
+    },
+    {
+      "switch": "SW-AULA4",
+      "port": "FastEthernet0/3",
+      "vlan_id": 20
+    },
+    {
+      "switch": "SW-AULA4",
+      "port": "FastEthernet0/4",
+      "vlan_id": 10
+    },
+    {
+      "switch": "SW-AULA4",
+      "port": "FastEthernet0/5",
+      "vlan_id": 10
+    },
+    {
+      "switch": "SW-AULA5",
+      "port": "FastEthernet0/1",
+      "vlan_id": 30
+    },
+    {
+      "switch": "SW-AULA5",
+      "port": "FastEthernet0/2",
+      "vlan_id": 10
+    },
+    {
+      "switch": "SW-AULA5",
+      "port": "FastEthernet0/3",
+      "vlan_id": 20
+    },
+    {
+      "switch": "SW-AULA5",
+      "port": "FastEthernet0/4",
+      "vlan_id": 10
+    },
+    {
+      "switch": "SW-AULA5",
+      "port": "FastEthernet0/5",
+      "vlan_id": 10
+    },
+    {
+      "switch": "SW-AULA6",
+      "port": "FastEthernet0/1",
+      "vlan_id": 30
+    },
+    {
+      "switch": "SW-AULA6",
+      "port": "FastEthernet0/2",
+      "vlan_id": 10
+    },
+    {
+      "switch": "SW-AULA6",
+      "port": "FastEthernet0/3",
+      "vlan_id": 20
+    },
+    {
+      "switch": "SW-AULA6",
+      "port": "FastEthernet0/4",
+      "vlan_id": 10
+    },
+    {
+      "switch": "SW-AULA6",
+      "port": "FastEthernet0/5",
+      "vlan_id": 10
+    },
+    {
+      "switch": "SW-AULA7",
+      "port": "FastEthernet0/1",
+      "vlan_id": 30
+    },
+    {
+      "switch": "SW-AULA7",
+      "port": "FastEthernet0/2",
+      "vlan_id": 10
+    },
+    {
+      "switch": "SW-AULA7",
+      "port": "FastEthernet0/3",
+      "vlan_id": 20
+    },
+    {
+      "switch": "SW-AULA7",
+      "port": "FastEthernet0/4",
+      "vlan_id": 10
+    },
+    {
+      "switch": "SW-AULA7",
+      "port": "FastEthernet0/5",
+      "vlan_id": 10
+    },
+    {
+      "switch": "SW-AULA8",
+      "port": "FastEthernet0/1",
+      "vlan_id": 30
+    },
+    {
+      "switch": "SW-AULA8",
+      "port": "FastEthernet0/2",
+      "vlan_id": 10
+    },
+    {
+      "switch": "SW-AULA8",
+      "port": "FastEthernet0/3",
+      "vlan_id": 20
+    },
+    {
+      "switch": "SW-AULA8",
+      "port": "FastEthernet0/4",
+      "vlan_id": 10
+    },
+    {
+      "switch": "SW-AULA8",
+      "port": "FastEthernet0/5",
+      "vlan_id": 10
+    },
+    {
+      "switch": "SW-AULA9",
+      "port": "FastEthernet0/1",
+      "vlan_id": 30
+    },
+    {
+      "switch": "SW-AULA9",
+      "port": "FastEthernet0/2",
+      "vlan_id": 10
+    },
+    {
+      "switch": "SW-AULA9",
+      "port": "FastEthernet0/3",
+      "vlan_id": 20
+    },
+    {
+      "switch": "SW-AULA9",
+      "port": "FastEthernet0/4",
+      "vlan_id": 10
+    },
+    {
+      "switch": "SW-AULA9",
+      "port": "FastEthernet0/5",
+      "vlan_id": 10
+    },
+    {
+      "switch": "SW-AULA10",
+      "port": "FastEthernet0/1",
+      "vlan_id": 30
+    },
+    {
+      "switch": "SW-AULA10",
+      "port": "FastEthernet0/2",
+      "vlan_id": 10
+    },
+    {
+      "switch": "SW-AULA10",
+      "port": "FastEthernet0/3",
+      "vlan_id": 20
+    },
+    {
+      "switch": "SW-AULA10",
+      "port": "FastEthernet0/4",
+      "vlan_id": 10
+    },
+    {
+      "switch": "SW-AULA10",
+      "port": "FastEthernet0/5",
+      "vlan_id": 10
+    },
+    {
+      "switch": "SW-LAB",
+      "port": "FastEthernet0/1",
+      "vlan_id": 40
+    },
+    {
+      "switch": "SW-LAB",
+      "port": "FastEthernet0/2",
+      "vlan_id": 40
+    },
+    {
+      "switch": "SW-LAB",
+      "port": "FastEthernet0/3",
+      "vlan_id": 40
+    },
+    {
+      "switch": "SW-LAB",
+      "port": "FastEthernet0/4",
+      "vlan_id": 40
+    },
+    {
+      "switch": "SW-DC",
+      "port": "FastEthernet0/1",
+      "vlan_id": 50
+    },
+    {
+      "switch": "SW-DC",
+      "port": "FastEthernet0/2",
+      "vlan_id": 50
+    },
+    {
+      "switch": "SW-DC",
+      "port": "FastEthernet0/3",
+      "vlan_id": 60
+    },
+    {
+      "switch": "SW-DC",
+      "port": "FastEthernet0/4",
+      "vlan_id": 60
+    }
+  ],
+  "trunks": [
+    {
+      "switch": "SW-CORE",
+      "port": "GigabitEthernet0/1",
+      "allowed_vlans": [
+        10,
+        20,
+        30,
+        40,
+        50,
+        60,
+        99
+      ],
+      "native_vlan": 1,
+      "encapsulation": "dot1q"
+    },
+    {
+      "switch": "SW-CORE",
+      "port": "FastEthernet0/1",
+      "allowed_vlans": [
+        10,
+        20,
+        30,
+        40,
+        50,
+        60,
+        99
+      ],
+      "native_vlan": 1,
+      "encapsulation": "dot1q"
+    },
+    {
+      "switch": "SW-AULA1",
+      "port": "GigabitEthernet0/1",
+      "allowed_vlans": [
+        10,
+        20,
+        30,
+        40,
+        50,
+        60,
+        99
+      ],
+      "native_vlan": 1,
+      "encapsulation": "dot1q"
+    },
+    {
+      "switch": "SW-CORE",
+      "port": "FastEthernet0/2",
+      "allowed_vlans": [
+        10,
+        20,
+        30,
+        40,
+        50,
+        60,
+        99
+      ],
+      "native_vlan": 1,
+      "encapsulation": "dot1q"
+    },
+    {
+      "switch": "SW-AULA2",
+      "port": "GigabitEthernet0/1",
+      "allowed_vlans": [
+        10,
+        20,
+        30,
+        40,
+        50,
+        60,
+        99
+      ],
+      "native_vlan": 1,
+      "encapsulation": "dot1q"
+    },
+    {
+      "switch": "SW-CORE",
+      "port": "FastEthernet0/3",
+      "allowed_vlans": [
+        10,
+        20,
+        30,
+        40,
+        50,
+        60,
+        99
+      ],
+      "native_vlan": 1,
+      "encapsulation": "dot1q"
+    },
+    {
+      "switch": "SW-AULA3",
+      "port": "GigabitEthernet0/1",
+      "allowed_vlans": [
+        10,
+        20,
+        30,
+        40,
+        50,
+        60,
+        99
+      ],
+      "native_vlan": 1,
+      "encapsulation": "dot1q"
+    },
+    {
+      "switch": "SW-CORE",
+      "port": "FastEthernet0/4",
+      "allowed_vlans": [
+        10,
+        20,
+        30,
+        40,
+        50,
+        60,
+        99
+      ],
+      "native_vlan": 1,
+      "encapsulation": "dot1q"
+    },
+    {
+      "switch": "SW-AULA4",
+      "port": "GigabitEthernet0/1",
+      "allowed_vlans": [
+        10,
+        20,
+        30,
+        40,
+        50,
+        60,
+        99
+      ],
+      "native_vlan": 1,
+      "encapsulation": "dot1q"
+    },
+    {
+      "switch": "SW-CORE",
+      "port": "FastEthernet0/5",
+      "allowed_vlans": [
+        10,
+        20,
+        30,
+        40,
+        50,
+        60,
+        99
+      ],
+      "native_vlan": 1,
+      "encapsulation": "dot1q"
+    },
+    {
+      "switch": "SW-AULA5",
+      "port": "GigabitEthernet0/1",
+      "allowed_vlans": [
+        10,
+        20,
+        30,
+        40,
+        50,
+        60,
+        99
+      ],
+      "native_vlan": 1,
+      "encapsulation": "dot1q"
+    },
+    {
+      "switch": "SW-CORE",
+      "port": "FastEthernet0/7",
+      "allowed_vlans": [
+        10,
+        20,
+        30,
+        40,
+        50,
+        60,
+        99
+      ],
+      "native_vlan": 1,
+      "encapsulation": "dot1q"
+    },
+    {
+      "switch": "SW-AULA6",
+      "port": "GigabitEthernet0/1",
+      "allowed_vlans": [
+        10,
+        20,
+        30,
+        40,
+        50,
+        60,
+        99
+      ],
+      "native_vlan": 1,
+      "encapsulation": "dot1q"
+    },
+    {
+      "switch": "SW-CORE",
+      "port": "FastEthernet0/8",
+      "allowed_vlans": [
+        10,
+        20,
+        30,
+        40,
+        50,
+        60,
+        99
+      ],
+      "native_vlan": 1,
+      "encapsulation": "dot1q"
+    },
+    {
+      "switch": "SW-AULA7",
+      "port": "GigabitEthernet0/1",
+      "allowed_vlans": [
+        10,
+        20,
+        30,
+        40,
+        50,
+        60,
+        99
+      ],
+      "native_vlan": 1,
+      "encapsulation": "dot1q"
+    },
+    {
+      "switch": "SW-CORE",
+      "port": "FastEthernet0/9",
+      "allowed_vlans": [
+        10,
+        20,
+        30,
+        40,
+        50,
+        60,
+        99
+      ],
+      "native_vlan": 1,
+      "encapsulation": "dot1q"
+    },
+    {
+      "switch": "SW-AULA8",
+      "port": "GigabitEthernet0/1",
+      "allowed_vlans": [
+        10,
+        20,
+        30,
+        40,
+        50,
+        60,
+        99
+      ],
+      "native_vlan": 1,
+      "encapsulation": "dot1q"
+    },
+    {
+      "switch": "SW-CORE",
+      "port": "FastEthernet0/10",
+      "allowed_vlans": [
+        10,
+        20,
+        30,
+        40,
+        50,
+        60,
+        99
+      ],
+      "native_vlan": 1,
+      "encapsulation": "dot1q"
+    },
+    {
+      "switch": "SW-AULA9",
+      "port": "GigabitEthernet0/1",
+      "allowed_vlans": [
+        10,
+        20,
+        30,
+        40,
+        50,
+        60,
+        99
+      ],
+      "native_vlan": 1,
+      "encapsulation": "dot1q"
+    },
+    {
+      "switch": "SW-CORE",
+      "port": "FastEthernet0/11",
+      "allowed_vlans": [
+        10,
+        20,
+        30,
+        40,
+        50,
+        60,
+        99
+      ],
+      "native_vlan": 1,
+      "encapsulation": "dot1q"
+    },
+    {
+      "switch": "SW-AULA10",
+      "port": "GigabitEthernet0/1",
+      "allowed_vlans": [
+        10,
+        20,
+        30,
+        40,
+        50,
+        60,
+        99
+      ],
+      "native_vlan": 1,
+      "encapsulation": "dot1q"
+    },
+    {
+      "switch": "SW-CORE",
+      "port": "FastEthernet0/6",
+      "allowed_vlans": [
+        10,
+        20,
+        30,
+        40,
+        50,
+        60,
+        99
+      ],
+      "native_vlan": 1,
+      "encapsulation": "dot1q"
+    },
+    {
+      "switch": "SW-LAB",
+      "port": "GigabitEthernet0/1",
+      "allowed_vlans": [
+        10,
+        20,
+        30,
+        40,
+        50,
+        60,
+        99
+      ],
+      "native_vlan": 1,
+      "encapsulation": "dot1q"
+    },
+    {
+      "switch": "SW-CORE",
+      "port": "GigabitEthernet0/2",
+      "allowed_vlans": [
+        10,
+        20,
+        30,
+        40,
+        50,
+        60,
+        99
+      ],
+      "native_vlan": 1,
+      "encapsulation": "dot1q"
+    },
+    {
+      "switch": "SW-DC",
+      "port": "GigabitEthernet0/1",
+      "allowed_vlans": [
+        10,
+        20,
+        30,
+        40,
+        50,
+        60,
+        99
+      ],
+      "native_vlan": 1,
+      "encapsulation": "dot1q"
+    }
+  ],
+  "subinterfaces": [
+    {
+      "router": "R-EDGE",
+      "parent_port": "GigabitEthernet0/0/0",
+      "vlan_id": 10,
+      "ip_cidr": "10.10.10.1/24",
+      "encapsulation": "dot1Q"
+    },
+    {
+      "router": "R-EDGE",
+      "parent_port": "GigabitEthernet0/0/0",
+      "vlan_id": 20,
+      "ip_cidr": "10.10.20.1/24",
+      "encapsulation": "dot1Q"
+    },
+    {
+      "router": "R-EDGE",
+      "parent_port": "GigabitEthernet0/0/0",
+      "vlan_id": 30,
+      "ip_cidr": "10.10.30.1/24",
+      "encapsulation": "dot1Q"
+    },
+    {
+      "router": "R-EDGE",
+      "parent_port": "GigabitEthernet0/0/0",
+      "vlan_id": 40,
+      "ip_cidr": "10.10.40.1/24",
+      "encapsulation": "dot1Q"
+    },
+    {
+      "router": "R-EDGE",
+      "parent_port": "GigabitEthernet0/0/0",
+      "vlan_id": 50,
+      "ip_cidr": "10.10.50.1/24",
+      "encapsulation": "dot1Q"
+    },
+    {
+      "router": "R-EDGE",
+      "parent_port": "GigabitEthernet0/0/0",
+      "vlan_id": 60,
+      "ip_cidr": "10.10.60.1/24",
+      "encapsulation": "dot1Q"
+    },
+    {
+      "router": "R-EDGE",
+      "parent_port": "GigabitEthernet0/0/0",
+      "vlan_id": 99,
+      "ip_cidr": "10.10.99.1/24",
+      "encapsulation": "dot1Q"
+    }
+  ],
+  "validations": [
+    {
+      "check_type": "ping",
+      "from_device": "PC-DOC1",
+      "to_target": "SRV-DASHBOARD",
+      "expected": "Reply"
+    },
+    {
+      "check_type": "ping",
+      "from_device": "SENS-A1",
+      "to_target": "SRV-MQTT",
+      "expected": "Reply"
+    },
+    {
+      "check_type": "ping",
+      "from_device": "PC-ADMIN",
+      "to_target": "SRV-INTERNET",
+      "expected": "Reply"
+    }
+  ],
+  "dual_stack": false,
+  "errors": [],
+  "warnings": []
+}

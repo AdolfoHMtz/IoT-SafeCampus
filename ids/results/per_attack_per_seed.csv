@@ -1,0 +1,271 @@
+seed,model,attack,recall,ttd_min,n
+0,Reglas z-score por perfil,botnet,1.0,0.0,3480
+0,Reglas z-score por perfil,bruteforce,1.0,0.0,900
+0,Reglas z-score por perfil,exfil,1.0,0.0,60
+0,Reglas z-score por perfil,http_ddos,1.0,0.0,3240
+0,Reglas z-score por perfil,mqtt_flood,1.0,0.0,1350
+0,Reglas z-score por perfil,scan,1.0,0.0,1200
+0,Isolation Forest,botnet,0.00028735632183908046,469.664866125052,3480
+0,Isolation Forest,bruteforce,0.0,42.30578539031655,900
+0,Isolation Forest,exfil,0.0,,60
+0,Isolation Forest,http_ddos,0.2675925925925926,0.03302889526821673,3240
+0,Isolation Forest,mqtt_flood,0.0,,1350
+0,Isolation Forest,scan,0.83,0.0,1200
+0,"Isolation Forest (todos los rasgos, ablación)",botnet,0.0,465.6334050161162,3480
+0,"Isolation Forest (todos los rasgos, ablación)",bruteforce,0.0,1.2121243997486697,900
+0,"Isolation Forest (todos los rasgos, ablación)",exfil,0.0,,60
+0,"Isolation Forest (todos los rasgos, ablación)",http_ddos,0.13950617283950617,0.20725491401778223,3240
+0,"Isolation Forest (todos los rasgos, ablación)",mqtt_flood,0.0,0.48309061641436224,1350
+0,"Isolation Forest (todos los rasgos, ablación)",scan,0.7558333333333334,0.0,1200
+0,Autoencoder ligero,botnet,1.0,0.0,3480
+0,Autoencoder ligero,bruteforce,1.0,0.0,900
+0,Autoencoder ligero,exfil,1.0,0.0,60
+0,Autoencoder ligero,http_ddos,1.0,0.0,3240
+0,Autoencoder ligero,mqtt_flood,1.0,0.0,1350
+0,Autoencoder ligero,scan,1.0,0.0,1200
+0,Árbol de decisión,botnet,0.9137931034482759,0.0,3480
+0,Árbol de decisión,bruteforce,0.75,4.011163532426386,900
+0,Árbol de decisión,exfil,0.0,,60
+0,Árbol de decisión,http_ddos,1.0,0.0,3240
+0,Árbol de decisión,mqtt_flood,0.9992592592592593,0.0,1350
+0,Árbol de decisión,scan,0.5283333333333333,11.914010945297196,1200
+0,Bosque ligero (10 árboles),botnet,0.9956896551724138,0.0,3480
+0,Bosque ligero (10 árboles),bruteforce,0.5144444444444445,4.011163532426386,900
+0,Bosque ligero (10 árboles),exfil,0.0,,60
+0,Bosque ligero (10 árboles),http_ddos,1.0,0.0,3240
+0,Bosque ligero (10 árboles),mqtt_flood,1.0,0.0,1350
+0,Bosque ligero (10 árboles),scan,0.9241666666666667,1.9208057071305424,1200
+0,Híbrido (árbol + autoencoder),botnet,1.0,0.0,3480
+0,Híbrido (árbol + autoencoder),bruteforce,1.0,0.0,900
+0,Híbrido (árbol + autoencoder),exfil,1.0,0.0,60
+0,Híbrido (árbol + autoencoder),http_ddos,1.0,0.0,3240
+0,Híbrido (árbol + autoencoder),mqtt_flood,1.0,0.0,1350
+0,Híbrido (árbol + autoencoder),scan,1.0,0.0,1200
+0,Random Forest (300 árboles),botnet,0.9798850574712644,0.0,3480
+0,Random Forest (300 árboles),bruteforce,0.61,4.011163532426386,900
+0,Random Forest (300 árboles),exfil,0.0,,60
+0,Random Forest (300 árboles),http_ddos,1.0,0.0,3240
+0,Random Forest (300 árboles),mqtt_flood,1.0,0.0,1350
+0,Random Forest (300 árboles),scan,1.0,0.0,1200
+0,MLP profunda (256-128-64),botnet,0.9956896551724138,0.0,3480
+0,MLP profunda (256-128-64),bruteforce,1.0,0.0,900
+0,MLP profunda (256-128-64),exfil,0.0,,60
+0,MLP profunda (256-128-64),http_ddos,1.0,0.0,3240
+0,MLP profunda (256-128-64),mqtt_flood,1.0,0.0,1350
+0,MLP profunda (256-128-64),scan,1.0,0.0,1200
+1,Reglas z-score por perfil,botnet,1.0,0.0,3480
+1,Reglas z-score por perfil,bruteforce,1.0,0.0,900
+1,Reglas z-score por perfil,exfil,1.0,0.0,60
+1,Reglas z-score por perfil,http_ddos,1.0,0.0,3240
+1,Reglas z-score por perfil,mqtt_flood,1.0,0.0,1350
+1,Reglas z-score por perfil,scan,1.0,0.0,1200
+1,Isolation Forest,botnet,0.414367816091954,462.3080880542063,3480
+1,Isolation Forest,bruteforce,0.0,3.156429400546282,900
+1,Isolation Forest,exfil,0.0,,60
+1,Isolation Forest,http_ddos,0.002777777777777778,5.942130478486069,3240
+1,Isolation Forest,mqtt_flood,0.0,,1350
+1,Isolation Forest,scan,0.4525,0.5737723460954537,1200
+1,"Isolation Forest (todos los rasgos, ablación)",botnet,0.0008620689655172414,784.8829152405999,3480
+1,"Isolation Forest (todos los rasgos, ablación)",bruteforce,0.0,1.6451034674537368,900
+1,"Isolation Forest (todos los rasgos, ablación)",exfil,0.016666666666666666,0.0,60
+1,"Isolation Forest (todos los rasgos, ablación)",http_ddos,0.0712962962962963,0.050230754199825846,3240
+1,"Isolation Forest (todos los rasgos, ablación)",mqtt_flood,0.0,0.8882398390521605,1350
+1,"Isolation Forest (todos los rasgos, ablación)",scan,0.0025,0.052264565824104166,1200
+1,Autoencoder ligero,botnet,1.0,0.0,3480
+1,Autoencoder ligero,bruteforce,1.0,0.0,900
+1,Autoencoder ligero,exfil,1.0,0.0,60
+1,Autoencoder ligero,http_ddos,1.0,0.0,3240
+1,Autoencoder ligero,mqtt_flood,1.0,0.0,1350
+1,Autoencoder ligero,scan,1.0,0.0,1200
+1,Árbol de decisión,botnet,0.9137931034482759,0.0,3480
+1,Árbol de decisión,bruteforce,0.7488888888888889,4.013162078211705,900
+1,Árbol de decisión,exfil,0.0,,60
+1,Árbol de decisión,http_ddos,1.0,0.0,3240
+1,Árbol de decisión,mqtt_flood,0.9992592592592593,0.0,1350
+1,Árbol de decisión,scan,0.6875,1.862899151040862,1200
+1,Bosque ligero (10 árboles),botnet,0.9474137931034483,0.0,3480
+1,Bosque ligero (10 árboles),bruteforce,0.6522222222222223,0.27580872921389527,900
+1,Bosque ligero (10 árboles),exfil,0.0,,60
+1,Bosque ligero (10 árboles),http_ddos,1.0,0.0,3240
+1,Bosque ligero (10 árboles),mqtt_flood,1.0,0.0,1350
+1,Bosque ligero (10 árboles),scan,0.7141666666666666,1.862899151040862,1200
+1,Híbrido (árbol + autoencoder),botnet,1.0,0.0,3480
+1,Híbrido (árbol + autoencoder),bruteforce,1.0,0.0,900
+1,Híbrido (árbol + autoencoder),exfil,1.0,0.0,60
+1,Híbrido (árbol + autoencoder),http_ddos,1.0,0.0,3240
+1,Híbrido (árbol + autoencoder),mqtt_flood,1.0,0.0,1350
+1,Híbrido (árbol + autoencoder),scan,1.0,0.0,1200
+1,Random Forest (300 árboles),botnet,0.9839080459770115,0.0,3480
+1,Random Forest (300 árboles),bruteforce,0.6344444444444445,4.013162078211705,900
+1,Random Forest (300 árboles),exfil,0.0,,60
+1,Random Forest (300 árboles),http_ddos,1.0,0.0,3240
+1,Random Forest (300 árboles),mqtt_flood,1.0,0.0,1350
+1,Random Forest (300 árboles),scan,1.0,0.0,1200
+1,MLP profunda (256-128-64),botnet,1.0,0.0,3480
+1,MLP profunda (256-128-64),bruteforce,1.0,0.0,900
+1,MLP profunda (256-128-64),exfil,0.0,,60
+1,MLP profunda (256-128-64),http_ddos,1.0,0.0,3240
+1,MLP profunda (256-128-64),mqtt_flood,1.0,0.0,1350
+1,MLP profunda (256-128-64),scan,1.0,0.0,1200
+2,Reglas z-score por perfil,botnet,1.0,0.0,3480
+2,Reglas z-score por perfil,bruteforce,1.0,0.0,900
+2,Reglas z-score por perfil,exfil,1.0,0.0,60
+2,Reglas z-score por perfil,http_ddos,1.0,0.0,3240
+2,Reglas z-score por perfil,mqtt_flood,1.0,0.0,1350
+2,Reglas z-score por perfil,scan,1.0,0.0,1200
+2,Isolation Forest,botnet,0.00028735632183908046,469.77629540442433,3480
+2,Isolation Forest,bruteforce,0.0,2.5215867397918674,900
+2,Isolation Forest,exfil,0.0,,60
+2,Isolation Forest,http_ddos,0.0,0.2117675581064153,3240
+2,Isolation Forest,mqtt_flood,0.0,,1350
+2,Isolation Forest,scan,0.9791666666666666,0.8718871835522198,1200
+2,"Isolation Forest (todos los rasgos, ablación)",botnet,0.0,,3480
+2,"Isolation Forest (todos los rasgos, ablación)",bruteforce,0.0,1.8470282014983241,900
+2,"Isolation Forest (todos los rasgos, ablación)",exfil,0.23333333333333334,0.0,60
+2,"Isolation Forest (todos los rasgos, ablación)",http_ddos,0.295679012345679,0.21143422477277152,3240
+2,"Isolation Forest (todos los rasgos, ablación)",mqtt_flood,0.0,1.9707542976131662,1350
+2,"Isolation Forest (todos los rasgos, ablación)",scan,0.6166666666666667,0.1896664489856145,1200
+2,Autoencoder ligero,botnet,1.0,0.0,3480
+2,Autoencoder ligero,bruteforce,1.0,0.0,900
+2,Autoencoder ligero,exfil,1.0,0.0,60
+2,Autoencoder ligero,http_ddos,1.0,0.0,3240
+2,Autoencoder ligero,mqtt_flood,1.0,0.0,1350
+2,Autoencoder ligero,scan,1.0,0.0,1200
+2,Árbol de decisión,botnet,0.9137931034482759,0.0,3480
+2,Árbol de decisión,bruteforce,0.7722222222222223,4.006325347003682,900
+2,Árbol de decisión,exfil,0.0,,60
+2,Árbol de decisión,http_ddos,1.0,0.0,3240
+2,Árbol de decisión,mqtt_flood,0.9992592592592593,0.0,1350
+2,Árbol de decisión,scan,0.7091666666666666,1.8798608972555182,1200
+2,Bosque ligero (10 árboles),botnet,0.9612068965517241,0.0,3480
+2,Bosque ligero (10 árboles),bruteforce,0.7633333333333333,4.006325347003682,900
+2,Bosque ligero (10 árboles),exfil,0.0,,60
+2,Bosque ligero (10 árboles),http_ddos,1.0,0.0,3240
+2,Bosque ligero (10 árboles),mqtt_flood,1.0,0.0,1350
+2,Bosque ligero (10 árboles),scan,0.7091666666666666,1.8798608972555182,1200
+2,Híbrido (árbol + autoencoder),botnet,1.0,0.0,3480
+2,Híbrido (árbol + autoencoder),bruteforce,1.0,0.0,900
+2,Híbrido (árbol + autoencoder),exfil,1.0,0.0,60
+2,Híbrido (árbol + autoencoder),http_ddos,1.0,0.0,3240
+2,Híbrido (árbol + autoencoder),mqtt_flood,1.0,0.0,1350
+2,Híbrido (árbol + autoencoder),scan,1.0,0.0,1200
+2,Random Forest (300 árboles),botnet,0.9910919540229886,0.0,3480
+2,Random Forest (300 árboles),bruteforce,0.5555555555555556,4.006325347003682,900
+2,Random Forest (300 árboles),exfil,0.0,,60
+2,Random Forest (300 árboles),http_ddos,1.0,0.0,3240
+2,Random Forest (300 árboles),mqtt_flood,1.0,0.0,1350
+2,Random Forest (300 árboles),scan,1.0,0.0,1200
+2,MLP profunda (256-128-64),botnet,0.9919540229885058,0.0,3480
+2,MLP profunda (256-128-64),bruteforce,1.0,0.0,900
+2,MLP profunda (256-128-64),exfil,0.0,,60
+2,MLP profunda (256-128-64),http_ddos,1.0,0.0,3240
+2,MLP profunda (256-128-64),mqtt_flood,1.0,0.0,1350
+2,MLP profunda (256-128-64),scan,1.0,0.0,1200
+3,Reglas z-score por perfil,botnet,1.0,0.0,3480
+3,Reglas z-score por perfil,bruteforce,1.0,0.0,900
+3,Reglas z-score por perfil,exfil,1.0,0.0,60
+3,Reglas z-score por perfil,http_ddos,1.0,0.0,3240
+3,Reglas z-score por perfil,mqtt_flood,1.0,0.0,1350
+3,Reglas z-score por perfil,scan,1.0,0.0,1200
+3,Isolation Forest,botnet,0.0008620689655172414,463.1956311811363,3480
+3,Isolation Forest,bruteforce,0.0,2.8329081470127373,900
+3,Isolation Forest,exfil,0.0,,60
+3,Isolation Forest,http_ddos,0.27067901234567904,0.0,3240
+3,Isolation Forest,mqtt_flood,0.0,0.07484202565877543,1350
+3,Isolation Forest,scan,1.0,0.0,1200
+3,"Isolation Forest (todos los rasgos, ablación)",botnet,0.03735632183908046,466.02247237029854,3480
+3,"Isolation Forest (todos los rasgos, ablación)",bruteforce,0.0,2.8325748136790936,900
+3,"Isolation Forest (todos los rasgos, ablación)",exfil,0.0,,60
+3,"Isolation Forest (todos los rasgos, ablación)",http_ddos,0.0,0.5762721844221232,3240
+3,"Isolation Forest (todos los rasgos, ablación)",mqtt_flood,0.017777777777777778,0.00923258056185053,1350
+3,"Isolation Forest (todos los rasgos, ablación)",scan,1.0,0.0,1200
+3,Autoencoder ligero,botnet,1.0,0.0,3480
+3,Autoencoder ligero,bruteforce,1.0,0.0,900
+3,Autoencoder ligero,exfil,1.0,0.0,60
+3,Autoencoder ligero,http_ddos,1.0,0.0,3240
+3,Autoencoder ligero,mqtt_flood,1.0,0.0,1350
+3,Autoencoder ligero,scan,1.0,0.0,1200
+3,Árbol de decisión,botnet,0.9350574712643678,0.0,3480
+3,Árbol de decisión,bruteforce,0.7088888888888889,4.001948763727948,900
+3,Árbol de decisión,exfil,0.0,,60
+3,Árbol de decisión,http_ddos,1.0,0.0,3240
+3,Árbol de decisión,mqtt_flood,1.0,0.0,1350
+3,Árbol de decisión,scan,0.71,0.1575056674395455,1200
+3,Bosque ligero (10 árboles),botnet,0.9594827586206897,0.0,3480
+3,Bosque ligero (10 árboles),bruteforce,0.7733333333333333,4.001948763727948,900
+3,Bosque ligero (10 árboles),exfil,0.0,,60
+3,Bosque ligero (10 árboles),http_ddos,1.0,0.0,3240
+3,Bosque ligero (10 árboles),mqtt_flood,1.0,0.0,1350
+3,Bosque ligero (10 árboles),scan,0.8791666666666667,0.1575056674395455,1200
+3,Híbrido (árbol + autoencoder),botnet,1.0,0.0,3480
+3,Híbrido (árbol + autoencoder),bruteforce,1.0,0.0,900
+3,Híbrido (árbol + autoencoder),exfil,1.0,0.0,60
+3,Híbrido (árbol + autoencoder),http_ddos,1.0,0.0,3240
+3,Híbrido (árbol + autoencoder),mqtt_flood,1.0,0.0,1350
+3,Híbrido (árbol + autoencoder),scan,1.0,0.0,1200
+3,Random Forest (300 árboles),botnet,0.9841954022988506,0.0,3480
+3,Random Forest (300 árboles),bruteforce,0.5888888888888889,4.001948763727948,900
+3,Random Forest (300 árboles),exfil,0.0,,60
+3,Random Forest (300 árboles),http_ddos,1.0,0.0,3240
+3,Random Forest (300 árboles),mqtt_flood,1.0,0.0,1350
+3,Random Forest (300 árboles),scan,1.0,0.0,1200
+3,MLP profunda (256-128-64),botnet,0.9982758620689656,0.0,3480
+3,MLP profunda (256-128-64),bruteforce,1.0,0.0,900
+3,MLP profunda (256-128-64),exfil,0.0,,60
+3,MLP profunda (256-128-64),http_ddos,1.0,0.0,3240
+3,MLP profunda (256-128-64),mqtt_flood,1.0,0.0,1350
+3,MLP profunda (256-128-64),scan,1.0,0.0,1200
+4,Reglas z-score por perfil,botnet,1.0,0.0,3480
+4,Reglas z-score por perfil,bruteforce,1.0,0.0,900
+4,Reglas z-score por perfil,exfil,1.0,0.0,60
+4,Reglas z-score por perfil,http_ddos,1.0,0.0,3240
+4,Reglas z-score por perfil,mqtt_flood,1.0,0.0,1350
+4,Reglas z-score por perfil,scan,1.0,0.0,1200
+4,Isolation Forest,botnet,0.0005747126436781609,462.378460098124,3480
+4,Isolation Forest,bruteforce,0.0,0.9045727941712054,900
+4,Isolation Forest,exfil,0.0,,60
+4,Isolation Forest,http_ddos,0.04876543209876543,0.02389364044550651,3240
+4,Isolation Forest,mqtt_flood,0.0,0.4889330525213154,1350
+4,Isolation Forest,scan,0.9916666666666667,0.0,1200
+4,"Isolation Forest (todos los rasgos, ablación)",botnet,0.2738505747126437,0.0016666666662786156,3480
+4,"Isolation Forest (todos los rasgos, ablación)",bruteforce,0.0,3.106258248811355,900
+4,"Isolation Forest (todos los rasgos, ablación)",exfil,0.0,,60
+4,"Isolation Forest (todos los rasgos, ablación)",http_ddos,0.11327160493827161,0.0,3240
+4,"Isolation Forest (todos los rasgos, ablación)",mqtt_flood,0.0,2.0649335818025674,1350
+4,"Isolation Forest (todos los rasgos, ablación)",scan,0.845,0.0036795835049512485,1200
+4,Autoencoder ligero,botnet,1.0,0.0,3480
+4,Autoencoder ligero,bruteforce,1.0,0.0,900
+4,Autoencoder ligero,exfil,1.0,0.0,60
+4,Autoencoder ligero,http_ddos,1.0,0.0,3240
+4,Autoencoder ligero,mqtt_flood,1.0,0.0,1350
+4,Autoencoder ligero,scan,1.0,0.0,1200
+4,Árbol de decisión,botnet,0.9405172413793104,0.0,3480
+4,Árbol de decisión,bruteforce,0.8355555555555556,0.016666666666666666,900
+4,Árbol de decisión,exfil,0.0,,60
+4,Árbol de decisión,http_ddos,1.0,0.0,3240
+4,Árbol de decisión,mqtt_flood,1.0,0.0,1350
+4,Árbol de decisión,scan,0.9641666666666666,0.0036795835049512485,1200
+4,Bosque ligero (10 árboles),botnet,0.9669540229885057,0.0,3480
+4,Bosque ligero (10 árboles),bruteforce,0.7288888888888889,0.18848764414142352,900
+4,Bosque ligero (10 árboles),exfil,0.0,,60
+4,Bosque ligero (10 árboles),http_ddos,1.0,0.0,3240
+4,Bosque ligero (10 árboles),mqtt_flood,1.0,0.0,1350
+4,Bosque ligero (10 árboles),scan,0.8625,2.113523107593452,1200
+4,Híbrido (árbol + autoencoder),botnet,1.0,0.0,3480
+4,Híbrido (árbol + autoencoder),bruteforce,1.0,0.0,900
+4,Híbrido (árbol + autoencoder),exfil,1.0,0.0,60
+4,Híbrido (árbol + autoencoder),http_ddos,1.0,0.0,3240
+4,Híbrido (árbol + autoencoder),mqtt_flood,1.0,0.0,1350
+4,Híbrido (árbol + autoencoder),scan,1.0,0.0,1200
+4,Random Forest (300 árboles),botnet,0.9844827586206897,0.0,3480
+4,Random Forest (300 árboles),bruteforce,0.6377777777777778,3.7963266618705043,900
+4,Random Forest (300 árboles),exfil,0.0,,60
+4,Random Forest (300 árboles),http_ddos,1.0,0.0,3240
+4,Random Forest (300 árboles),mqtt_flood,1.0,0.0,1350
+4,Random Forest (300 árboles),scan,1.0,0.0,1200
+4,MLP profunda (256-128-64),botnet,0.9910919540229886,0.0016666666662786156,3480
+4,MLP profunda (256-128-64),bruteforce,1.0,0.0,900
+4,MLP profunda (256-128-64),exfil,0.0,,60
+4,MLP profunda (256-128-64),http_ddos,1.0,0.0,3240
+4,MLP profunda (256-128-64),mqtt_flood,1.0,0.0,1350
+4,MLP profunda (256-128-64),scan,1.0,0.0,1200
