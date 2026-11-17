@@ -62,11 +62,11 @@ Se evaluó en dos escenarios:
 
 | Modelo | F1 | Throughput (flujos/s) | CPU por flujo (µs) | Tamaño del modelo |
 |---|---|---|---|---|
-| Bosque ligero (10 árboles) | **0.90** | 3.5 M | 1.16 | 2.6 MB |
-| Random Forest (300 árboles) | 0.77 | 113 k | 12.5 | 127 MB |
+| Bosque ligero (10 árboles) | **0.90** | 3.5 M | 0.28 | 2.6 MB |
+| Random Forest (300 árboles) | 0.77 | 113 k | 8.7 | 127 MB |
 
-El bosque de 10 árboles supera al Random Forest de 300 con 31 veces más
-throughput y un modelo 49 veces más pequeño. Las tablas completas están en
+El bosque de 10 árboles supera al Random Forest de 300 con 31 veces menos CPU
+por flujo y un modelo 49 veces más pequeño. Las tablas completas están en
 `ids/results/summary.csv` (escenario A) e `ids/results/nf3/summary.csv` (escenario B).
 
 ### Cómo ejecutarlo
